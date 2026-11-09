@@ -1,0 +1,40 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-06-24 15:37:43",
+                "duration": 210000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-27 02:44:37",
+                "duration": 210000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-27 02:44:37",
+                "duration": 210000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.26717171717171717,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "20",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-03-25 06:53:53",
+                "end_time": "2016-03-25 08:50:33",
+                "duration": 11700
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2016-03-25 07:05:05",
+                "end_time": "2016-03-25 10:25:05",
+                "duration": 12000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-26 10:41:18",
+                "end_time": "2016-03-26 10:57:58",
+                "duration": 2000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-27 11:18:07",
+                "end_time": "2016-03-27 15:11:27",
+                "duration": 1000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.02630315500685871,
+        "weighted_score": 0.3421010516689529
+    }
+}

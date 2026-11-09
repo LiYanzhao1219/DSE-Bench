@@ -1,0 +1,124 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "12",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努表面矿物组成及空间分布研究",
+            "贝努含水矿物光谱特征分布研究",
+            "贝努主要元素丰度空间差异研究",
+            "贝努地质单元与矿物特征关联研究",
+            "贝努不同地质单元的热辐射特征研究",
+            "贝努表面颜色与反射光谱关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-06 12:37:23",
+                "end_time": "2019-03-07 09:27:23",
+                "duration": 40300
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-06 12:37:23",
+                "end_time": "2019-03-08 11:00:43",
+                "duration": 3093000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-06 16:54:50",
+                "end_time": "2019-03-07 07:21:30",
+                "duration": 65400
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-03-07 09:27:23",
+                "end_time": "2019-03-08 04:04:03",
+                "duration": 4400
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-08 05:44:12",
+                "end_time": "2019-03-08 08:14:12",
+                "duration": 8300
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-03-08 18:34:00",
+                "end_time": "2019-03-09 09:50:40",
+                "duration": 30000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-09 18:20:30",
+                "end_time": "2019-03-10 18:30:30",
+                "duration": 41000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-09 18:20:30",
+                "end_time": "2019-03-11 03:57:10",
+                "duration": 24000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-09 21:10:39",
+                "end_time": "2019-03-10 13:00:39",
+                "duration": 22000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-03-10 18:30:30",
+                "end_time": "2019-03-11 16:10:30",
+                "duration": 33000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-11 12:19:33",
+                "end_time": "2019-03-11 15:06:13",
+                "duration": 7000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-11 12:19:33",
+                "end_time": "2019-03-11 15:06:13",
+                "duration": 300
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-03-11 19:41:18",
+                "end_time": "2019-03-12 10:41:18",
+                "duration": 39000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2019-03-08 18:30:07",
+                "end_time": "2019-03-08 18:40:07",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2019-03-09 18:14:17",
+                "end_time": "2019-03-09 18:24:17",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2019-03-11 19:36:54",
+                "end_time": "2019-03-11 19:46:54",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.8571428571428571,
+        "payload_avg_ratio_first": 0.8221450617283951,
+        "weighted_score": 0.5597626396237507
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "level": "l1",
+    "model_name": "kimi-k2.5",
+    "data_num": "18",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗核表面冰与矿物光谱特征研究",
+            "彗核表面及浅层温度特征研究",
+            "彗核地质单元与热辐射特征关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-08 11:34:43",
+                "end_time": "2014-08-09 13:08:03",
+                "duration": 92000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-08 11:38:48",
+                "end_time": "2014-08-09 08:45:28",
+                "duration": 76000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-09 09:39:00",
+                "end_time": "2014-08-10 06:25:40",
+                "duration": 74800
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-10 05:40:44",
+                "end_time": "2014-08-11 03:04:04",
+                "duration": 77000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-12 04:36:54",
+                "end_time": "2014-08-12 23:13:34",
+                "duration": 67000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-13 13:55:57",
+                "end_time": "2014-08-14 14:22:37",
+                "duration": 88000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-13 14:17:20",
+                "end_time": "2014-08-14 04:44:00",
+                "duration": 52000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-14 14:42:16",
+                "end_time": "2014-08-15 14:35:36",
+                "duration": 86000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.475,
+        "weighted_score": 0.6166666666666667
+    }
+}

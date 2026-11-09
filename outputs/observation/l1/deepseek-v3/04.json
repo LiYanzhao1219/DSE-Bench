@@ -1,0 +1,56 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-v3",
+    "data_num": "04",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彗星表面物质的形成机制研究",
+            "主带彗星水特征及其成因分析",
+            "主带彗星有机物特征及其成因研究",
+            "主带彗星含水矿物研究",
+            "主带彗星挥发分特征及其成因分析"
+        ],
+        "observation_plan": [
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-16 02:43:33",
+                "duration": 864000
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-07 15:59:59",
+                "duration": 259980
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-03 21:23:36",
+                "end_time": "2026-08-06 02:43:33",
+                "duration": 197997
+            },
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-22 02:40:17",
+                "duration": 864000
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-19 02:40:17",
+                "duration": 604800
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.6,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

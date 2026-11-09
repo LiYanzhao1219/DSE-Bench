@@ -1,0 +1,54 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-14b",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小行星化学成分分析",
+            "小行星表面空间环境研究",
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-22 07:47:25",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 28800
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 23400
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-25 01:28:55",
+                "duration": 180000
+            },
+            {
+                "name": "磁力计",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-29 08:26:24",
+                "duration": 180000
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-29 08:26:24",
+                "duration": 180000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.6,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.5517676767676768,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "13",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努巨石与周边表面的热响应差异研究",
+            "贝努矿物光谱与热辐射光谱对照研究",
+            "贝努元素丰度与地质单元对应关系研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-10 07:22:14",
+                "end_time": "2019-05-11 10:02:14",
+                "duration": 96000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-10 08:01:15",
+                "end_time": "2019-05-11 06:22:55",
+                "duration": 80500
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-11 04:52:43",
+                "end_time": "2019-05-11 21:41:03",
+                "duration": 60500
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-11 08:38:38",
+                "end_time": "2019-05-11 23:05:18",
+                "duration": 52000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-11 19:48:34",
+                "end_time": "2019-05-12 09:08:34",
+                "duration": 48000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-12 08:21:51",
+                "end_time": "2019-05-12 19:53:31",
+                "duration": 41500
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-13 03:20:28",
+                "end_time": "2019-05-14 03:30:28",
+                "duration": 87000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-13 03:52:38",
+                "end_time": "2019-05-13 21:52:38",
+                "duration": 64800
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-13 21:04:19",
+                "end_time": "2019-05-14 13:27:39",
+                "duration": 59000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-14 02:40:07",
+                "end_time": "2019-05-14 16:00:07",
+                "duration": 48000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-14 12:38:51",
+                "end_time": "2019-05-15 02:17:11",
+                "duration": 49100
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-15 00:41:30",
+                "end_time": "2019-05-15 08:36:30",
+                "duration": 28500
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-15 14:31:18",
+                "end_time": "2019-05-16 10:14:38",
+                "duration": 71000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-15 14:40:40",
+                "end_time": "2019-05-16 09:34:00",
+                "duration": 68000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-16 11:49:26",
+                "end_time": "2019-05-16 21:32:46",
+                "duration": 35000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-16 12:05:23",
+                "end_time": "2019-05-16 12:07:03",
+                "duration": 100
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-17 00:42:05",
+                "end_time": "2019-05-17 07:38:45",
+                "duration": 25000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-17 11:03:36",
+                "end_time": "2019-05-17 16:36:56",
+                "duration": 20000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.9553075396825396,
+        "weighted_score": 0.7946263227513227
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "11",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面温度分布与热惯量研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-02 01:00:00",
+                "duration": 85600
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-01 00:08:40",
+                "end_time": "2027-01-01 01:32:00",
+                "duration": 8000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2027-01-01 10:00:00",
+                "end_time": "2027-01-02 16:00:00",
+                "duration": 540000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2027-01-02 06:07:12",
+                "end_time": "2027-01-02 18:37:12",
+                "duration": 48600
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-03 09:05:30",
+                "end_time": "2027-01-03 18:15:30",
+                "duration": 33000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-03 09:21:20",
+                "end_time": "2027-01-03 20:28:00",
+                "duration": 400000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2027-01-03 17:05:48",
+                "end_time": "2027-01-04 02:49:08",
+                "duration": 175000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.14285714285714285,
+        "payload_avg_ratio_first": 0.5212191358024691,
+        "weighted_score": 0.5546920928865373
+    }
+}

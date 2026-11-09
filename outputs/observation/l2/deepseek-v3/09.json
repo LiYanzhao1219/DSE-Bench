@@ -1,0 +1,73 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-v3",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-07-04 01:37:43",
+                "duration": 2160000
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-08-07 06:13:02",
+                "end_time": "2018-08-24 17:43:02",
+                "duration": 1512000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-07-08 00:07:07",
+                "duration": 2322150
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-08-04 13:14:09",
+                "end_time": "2018-08-23 01:03:50",
+                "duration": 1608581
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-07-06 12:44:37",
+                "duration": 2196000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-08-05 13:33:48",
+                "end_time": "2018-08-23 01:03:50",
+                "duration": 1510202
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-08-29 04:48:15",
+                "duration": 7668011
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-01 00:00:00",
+                "end_time": "2018-08-30 00:00:00",
+                "duration": 7776000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.3125,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "20",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗尾方向太阳风离子能谱与成分研究",
+            "彗尾方向电子能谱变化研究",
+            "彗发电子密度与温度变化研究",
+            "太阳风相互作用区磁场扰动研究",
+            "彗发离子成分与中性气体来源关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-03-25 06:40:17",
+                "end_time": "2016-03-26 10:43:37",
+                "duration": 92000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2016-03-26 10:01:42",
+                "end_time": "2016-03-27 18:23:22",
+                "duration": 122000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-26 10:18:08",
+                "end_time": "2016-03-27 12:16:28",
+                "duration": 800
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-26 10:20:09",
+                "end_time": "2016-03-27 19:56:49",
+                "duration": 114000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-26 10:46:08",
+                "end_time": "2016-03-27 14:14:28",
+                "duration": 96000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-27 11:41:54",
+                "end_time": "2016-03-28 09:38:34",
+                "duration": 79600
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-29 12:52:18",
+                "end_time": "2016-03-30 16:55:38",
+                "duration": 102000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2016-03-29 13:18:25",
+                "end_time": "2016-03-30 12:05:05",
+                "duration": 45000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-29 13:22:37",
+                "end_time": "2016-03-30 22:09:17",
+                "duration": 118000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-29 13:29:28",
+                "end_time": "2016-03-30 15:52:48",
+                "duration": 84000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-30 13:30:03",
+                "end_time": "2016-03-31 08:40:03",
+                "duration": 59000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-04-01 07:28:52",
+                "end_time": "2016-04-02 00:25:32",
+                "duration": 1000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.625,
+        "payload_avg_ratio_first": 0.6666666666666666,
+        "weighted_score": 0.7638888888888888
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "17",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "龙宫晨昏表面温度差异研究",
+            "龙宫表面热惯量空间分布研究",
+            "龙宫巨石与周边表面的热响应差异研究",
+            "龙宫地形坡度对表面热响应的影响研究",
+            "龙宫表面反射颜色与温度分布关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-09 09:13:31",
+                "end_time": "2019-08-10 10:03:31",
+                "duration": 84000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-09 09:19:46",
+                "end_time": "2019-08-10 17:13:06",
+                "duration": 114900
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-10 09:04:23",
+                "end_time": "2019-08-11 07:17:43",
+                "duration": 68800
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2019-08-11 14:12:02",
+                "end_time": "2019-08-12 08:15:22",
+                "duration": 59000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-12 14:52:36",
+                "end_time": "2019-08-13 18:39:16",
+                "duration": 75000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-12 15:06:19",
+                "end_time": "2019-08-14 05:26:19",
+                "duration": 134000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-14 06:29:14",
+                "end_time": "2019-08-15 02:45:54",
+                "duration": 71000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2019-08-15 04:07:23",
+                "end_time": "2019-08-15 16:04:03",
+                "duration": 40000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.7142857142857143,
+        "payload_avg_ratio_first": 0.6666666666666666,
+        "weighted_score": 0.7936507936507936
+    }
+}

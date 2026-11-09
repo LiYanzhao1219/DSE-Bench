@@ -1,0 +1,79 @@
+{
+    "level": "l1",
+    "model_name": "anthropic/claude-sonnet-4.6",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "爱神星物理特性探测",
+            "小行星化学成分分析",
+            "小行星表面空间环境研究",
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-21 04:24:47",
+                "end_time": "2001-05-24 05:16:02",
+                "duration": 262275
+            },
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-06-17 02:50:48",
+                "end_time": "2001-06-17 09:59:33",
+                "duration": 25725
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-22 07:47:25",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 212988
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-06-16 14:35:26",
+                "end_time": "2001-06-16 15:25:38",
+                "duration": 3012
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 77298
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-06-16 14:35:26",
+                "end_time": "2001-06-17 05:47:08",
+                "duration": 54702
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 23:28:55",
+                "duration": 180000
+            },
+            {
+                "name": "磁力计",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-28 18:26:24",
+                "duration": 180000
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-28 18:26:24",
+                "duration": 180000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.3333333333333333,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

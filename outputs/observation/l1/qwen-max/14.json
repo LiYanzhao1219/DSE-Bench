@@ -1,0 +1,76 @@
+{
+    "level": "l1",
+    "model_name": "qwen-max",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区矿物组成与地形关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:09:42",
+                "end_time": "2019-10-08 23:39:42",
+                "duration": 117000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:30:26",
+                "end_time": "2019-10-07 21:37:06",
+                "duration": 22000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:30:25",
+                "end_time": "2019-10-09 23:47:05",
+                "duration": 91000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-09 22:14:13",
+                "end_time": "2019-10-10 15:27:33",
+                "duration": 62000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:33:50",
+                "end_time": "2019-10-12 04:33:50",
+                "duration": 108000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 23:04:59",
+                "end_time": "2019-10-11 23:31:39",
+                "duration": 88000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:21:51",
+                "end_time": "2019-10-11 18:15:11",
+                "duration": 68000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-12 01:15:41",
+                "end_time": "2019-10-12 08:45:41",
+                "duration": 27000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-13 01:50:51",
+                "end_time": "2019-10-13 14:20:51",
+                "duration": 45000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.125,
+        "payload_avg_ratio_first": 0.6395763187429854,
+        "weighted_score": 0.5881921062476617
+    }
+}

@@ -1,0 +1,106 @@
+[
+  {
+      "name": "候选采样区高分辨率地形测绘",
+      "loadData": [
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "候选采样区巨石尺度与分布研究",
+      "loadData": [
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "候选采样区坡度与地形起伏研究",
+      "loadData": [
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "候选采样区颜色与地质单元划分",
+      "loadData": [
+          {
+              "pay_load": "MapCam多光谱相机",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "候选采样区含水矿物光谱特征研究",
+      "loadData": [
+          {
+              "pay_load": "OVIRS可见红外光谱仪",
+              "require_time/min": 3300
+          },
+          {
+              "pay_load": "MapCam多光谱相机",
+              "require_time/min": 1500
+          }
+      ]
+  },
+  {
+      "name": "候选采样区表面温度及热惯量研究",
+      "loadData": [
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 1200
+          }
+      ]
+  },
+  {
+      "name": "候选采样区元素丰度对比研究",
+      "loadData": [
+          {
+              "pay_load": "REXIS X射线成像光谱仪",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "MapCam多光谱相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "候选采样区矿物组成与地形关联研究",
+      "loadData": [
+          {
+              "pay_load": "OVIRS可见红外光谱仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 1800
+          }
+      ]
+  }
+]

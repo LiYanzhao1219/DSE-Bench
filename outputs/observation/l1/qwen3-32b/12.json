@@ -1,0 +1,84 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "12",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努含水矿物光谱特征分布研究",
+            "贝努岩块与周边地形的形貌差异研究",
+            "贝努地质单元与矿物特征关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-06 11:31:25",
+                "end_time": "2019-03-07 10:01:25",
+                "duration": 62000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-06 11:37:51",
+                "end_time": "2019-03-08 11:07:51",
+                "duration": 155000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-06 12:13:06",
+                "end_time": "2019-03-07 08:29:46",
+                "duration": 67000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-03-07 08:53:58",
+                "end_time": "2019-03-07 17:13:58",
+                "duration": 29000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-08 03:41:55",
+                "end_time": "2019-03-08 19:15:15",
+                "duration": 55000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-03-08 18:08:06",
+                "end_time": "2019-03-08 22:51:26",
+                "duration": 16000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-09 17:48:02",
+                "end_time": "2019-03-10 13:48:02",
+                "duration": 72700
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-09 18:04:38",
+                "end_time": "2019-03-10 06:34:38",
+                "duration": 40000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-09 18:10:04",
+                "end_time": "2019-03-10 06:56:44",
+                "duration": 38000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-11 03:10:23",
+                "end_time": "2019-03-11 17:37:03",
+                "duration": 57000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.6499485596707819,
+        "weighted_score": 0.3595066627474035
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "20",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗尾方向太阳风离子能谱与成分研究",
+            "彗发电子密度与温度变化研究",
+            "彗发活动强度与等离子体环境关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-03-25 06:50:20",
+                "end_time": "2016-03-25 10:27:00",
+                "duration": 9800
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2016-03-25 07:04:49",
+                "end_time": "2016-03-25 10:08:09",
+                "duration": 1600
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2016-03-25 20:45:51",
+                "end_time": "2016-03-26 10:55:51",
+                "duration": 146000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2016-03-26 10:05:23",
+                "end_time": "2016-03-26 19:32:03",
+                "duration": 3000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-26 10:18:08",
+                "end_time": "2016-03-27 12:24:48",
+                "duration": 33400
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-26 10:20:09",
+                "end_time": "2016-03-27 20:13:29",
+                "duration": 43000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-26 10:46:08",
+                "end_time": "2016-03-27 14:16:08",
+                "duration": 38000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-27 11:13:34",
+                "end_time": "2016-03-28 11:40:14",
+                "duration": 2000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-29 13:09:35",
+                "end_time": "2016-03-29 23:59:35",
+                "duration": 400
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-29 13:25:58",
+                "end_time": "2016-03-30 00:49:18",
+                "duration": 28300
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-29 13:25:58",
+                "end_time": "2016-03-30 00:49:18",
+                "duration": 99000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-29 13:38:23",
+                "end_time": "2016-03-30 22:08:23",
+                "duration": 51000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-30 13:35:12",
+                "end_time": "2016-03-31 08:28:32",
+                "duration": 113300
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2016-03-31 10:21:53",
+                "end_time": "2016-03-31 12:18:33",
+                "duration": 600
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2016-04-01 07:27:33",
+                "end_time": "2016-04-01 23:17:33",
+                "duration": 138000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.5402902481606184,
+        "weighted_score": 0.3050967493868728
+    }
+}

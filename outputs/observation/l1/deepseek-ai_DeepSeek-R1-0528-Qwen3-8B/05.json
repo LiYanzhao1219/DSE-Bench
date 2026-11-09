@@ -1,0 +1,95 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "05",
+    "generated": false,
+    "reason": "time_format_invalid",
+    "plan": {
+        "achieved_objectives": [
+            "小天体轨道参数测定",
+            "小天体自转参数测定",
+            "小天体形状大小参数测定",
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究",
+            "小行星轨道长期演化与雅科夫斯基效应影响机理研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-10-01 22:04:35",
+                "end_time": "2026-10-05 21:29:17",
+                "duration": 829000
+            },
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-10-01 00:00:00",
+                "end_time": "2026-10-04 23:24:45",
+                "duration": 694845
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-10-12 00:09:11",
+                "end_time": "2026-11-19 00:26:43",
+                "duration": 4810210
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-10-04 23:24:45",
+                "end_time": "2026-10-08 00:44:42",
+                "duration": 360597
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-10-05 21:29:17",
+                "end_time": "2026-10-10 03:59:59",
+                "duration": 888432
+            },
+            {
+                "name": "小视场导航敏感器",
+                "start_time": "2026-2026-10-01 00:00:00",
+                "end_time": "2026-10-04 23:24:45",
+                "duration": 694845
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-11-25 02:46:47",
+                "end_time": "2026-11-29 01:58:27",
+                "duration": 988800
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-10-08 00:44:42",
+                "end_time": "2026-11-22 23:38:15",
+                "duration": 3847010
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-10-16 06:40:12",
+                "end_time": "2026-11-14 18:09:52",
+                "duration": 3962485
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-11-22 23:38:15",
+                "end_time": "2026-11-26 00:48:19",
+                "duration": 433813
+            },
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-11-26 00:48:19",
+                "end_time": "2026-11-30 00:00:00",
+                "duration": 121900
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 0.0,
+        "accuracy_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.0,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,9 @@
+langchain-core
+langchain-openai
+pydantic>=2
+openpyxl
+pandas
+numpy
+scipy
+scikit-learn
+

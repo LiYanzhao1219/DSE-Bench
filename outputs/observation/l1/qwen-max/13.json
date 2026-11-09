@@ -1,0 +1,82 @@
+{
+    "level": "l1",
+    "model_name": "qwen-max",
+    "data_num": "13",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努巨石与周边表面的热响应差异研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-10 07:51:11",
+                "end_time": "2019-05-10 10:04:31",
+                "duration": 8000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-10 08:01:15",
+                "end_time": "2019-05-11 06:22:55",
+                "duration": 80500
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-11 05:14:17",
+                "end_time": "2019-05-11 07:10:57",
+                "duration": 7000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-11 09:04:21",
+                "end_time": "2019-05-11 09:37:41",
+                "duration": 2000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-11 19:58:43",
+                "end_time": "2019-05-11 20:32:03",
+                "duration": 2000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-13 03:20:28",
+                "end_time": "2019-05-14 03:38:57",
+                "duration": 87509
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-13 03:52:38",
+                "end_time": "2019-05-13 21:52:38",
+                "duration": 64800
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-15 14:12:20",
+                "end_time": "2019-05-16 13:40:37",
+                "duration": 84497
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-15 14:17:48",
+                "end_time": "2019-05-16 10:01:08",
+                "duration": 71000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-17 10:57:40",
+                "end_time": "2019-05-17 11:31:00",
+                "duration": 2000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.14285714285714285,
+        "payload_avg_ratio_first": 0.30248412698412697,
+        "weighted_score": 0.48178042328042325
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-r1",
+    "data_num": "18",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗核整体形状与表面形貌研究",
+            "彗核自转状态与表面地标跟踪研究",
+            "彗核表面冰与矿物光谱特征研究",
+            "彗核表面及浅层温度特征研究",
+            "初期彗发气体组成与产率研究",
+            "彗发尘埃通量与喷流形态关联研究",
+            "彗核地质单元与热辐射特征关联研究",
+            "太阳风与初期彗发等离子体相互作用研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-08 11:23:09",
+                "end_time": "2014-08-09 10:59:49",
+                "duration": 85000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-08 11:56:53",
+                "end_time": "2014-08-09 11:16:53",
+                "duration": 84000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-09 09:39:00",
+                "end_time": "2014-08-10 06:29:00",
+                "duration": 75000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-09 11:22:07",
+                "end_time": "2014-08-10 06:32:07",
+                "duration": 69000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-10 05:21:36",
+                "end_time": "2014-08-11 04:58:16",
+                "duration": 85000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-10 05:25:38",
+                "end_time": "2014-08-10 23:45:38",
+                "duration": 66000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-10 06:07:27",
+                "end_time": "2014-08-11 02:40:47",
+                "duration": 74000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-11 03:51:29",
+                "end_time": "2014-08-11 23:51:29",
+                "duration": 72000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-12 04:49:14",
+                "end_time": "2014-08-12 21:29:14",
+                "duration": 60000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-12 04:49:53",
+                "end_time": "2014-08-13 00:33:13",
+                "duration": 71000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-12 05:22:15",
+                "end_time": "2014-08-12 22:02:15",
+                "duration": 60000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-13 01:53:05",
+                "end_time": "2014-08-13 12:09:45",
+                "duration": 37000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-13 14:06:29",
+                "end_time": "2014-08-14 16:46:29",
+                "duration": 96000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-13 14:20:41",
+                "end_time": "2014-08-14 14:30:41",
+                "duration": 87000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-14 14:42:46",
+                "end_time": "2014-08-15 12:22:46",
+                "duration": 78000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-14 15:36:42",
+                "end_time": "2014-08-15 07:43:22",
+                "duration": 58000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "weighted_score": 0.6666666666666666
+    }
+}

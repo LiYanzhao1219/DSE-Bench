@@ -1,0 +1,118 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-v4-pro",
+    "data_num": "18",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗核整体形状与表面形貌研究",
+            "彗核自转状态与表面地标跟踪研究",
+            "彗核表面冰与矿物光谱特征研究",
+            "彗核表面及浅层温度特征研究",
+            "彗发尘埃通量与喷流形态关联研究",
+            "彗核地质单元与热辐射特征关联研究",
+            "太阳风与初期彗发等离子体相互作用研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-08 11:23:09",
+                "end_time": "2014-08-09 10:46:29",
+                "duration": 84200
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-08 11:34:43",
+                "end_time": "2014-08-09 13:11:23",
+                "duration": 92200
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-09 09:39:00",
+                "end_time": "2014-08-10 06:25:40",
+                "duration": 74800
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-09 11:22:07",
+                "end_time": "2014-08-10 06:18:47",
+                "duration": 68200
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-10 05:21:36",
+                "end_time": "2014-08-11 04:48:16",
+                "duration": 84400
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-10 05:25:38",
+                "end_time": "2014-08-10 23:37:18",
+                "duration": 65500
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-11 03:51:29",
+                "end_time": "2014-08-11 23:41:29",
+                "duration": 71400
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-12 04:39:24",
+                "end_time": "2014-08-12 21:19:24",
+                "duration": 60000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-12 05:09:37",
+                "end_time": "2014-08-13 00:52:57",
+                "duration": 71000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-12 05:19:56",
+                "end_time": "2014-08-12 22:16:36",
+                "duration": 61000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-13 01:50:47",
+                "end_time": "2014-08-13 12:07:27",
+                "duration": 37000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-13 14:11:04",
+                "end_time": "2014-08-14 14:37:44",
+                "duration": 88000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-13 14:12:47",
+                "end_time": "2014-08-14 14:39:27",
+                "duration": 88000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-14 14:55:22",
+                "end_time": "2014-08-15 12:35:22",
+                "duration": 78000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-14 15:49:57",
+                "end_time": "2014-08-15 07:56:37",
+                "duration": 58000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.875,
+        "payload_avg_ratio_first": 0.9366319444444444,
+        "weighted_score": 0.9372106481481483
+    }
+}

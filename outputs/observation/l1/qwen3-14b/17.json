@@ -1,0 +1,71 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "17",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "龙宫表面反射颜色与温度分布关联研究",
+            "龙宫矿物光谱与热物理差异关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-09 09:38:59",
+                "end_time": "2019-08-09 22:25:39",
+                "duration": 1000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-10 02:33:26",
+                "end_time": "2019-08-10 17:16:46",
+                "duration": 37000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-10 09:06:11",
+                "end_time": "2019-08-10 21:19:31",
+                "duration": 20000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2019-08-10 16:42:43",
+                "end_time": "2019-08-11 13:32:43",
+                "duration": 2000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-12 14:52:36",
+                "end_time": "2019-08-13 18:39:16",
+                "duration": 500000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-12 15:03:58",
+                "end_time": "2019-08-14 07:03:58",
+                "duration": 800000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2019-08-13 17:33:53",
+                "end_time": "2019-08-14 17:43:53",
+                "duration": 1000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-14 06:02:09",
+                "end_time": "2019-08-15 03:58:49",
+                "duration": 33000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.2857142857142857,
+        "payload_avg_ratio_first": 0.5588918283362728,
+        "weighted_score": 0.2815353713501862
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "11",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小行星整体形状与体积测定",
+            "小行星自转参数测定",
+            "表面巨石与撞击坑形貌研究",
+            "表面矿物组成及空间分布研究",
+            "表面含水矿物光谱特征研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-02 01:00:00",
+                "duration": 89000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-02 01:00:00",
+                "duration": 89000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-02 01:00:00",
+                "duration": 71000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2027-01-01 10:20:00",
+                "end_time": "2027-01-01 19:13:20",
+                "duration": 28000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2027-01-02 06:01:50",
+                "end_time": "2027-01-02 06:18:30",
+                "duration": 1000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-03 09:15:03",
+                "end_time": "2027-01-04 00:15:03",
+                "duration": 5000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-03 09:22:02",
+                "end_time": "2027-01-04 00:22:02",
+                "duration": 55000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-03 09:29:18",
+                "end_time": "2027-01-03 14:29:18",
+                "duration": 16000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2027-01-03 17:00:00",
+                "end_time": "2027-01-04 23:00:00",
+                "duration": 85000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.7142857142857143,
+        "payload_avg_ratio_first": 0.7183641975308642,
+        "weighted_score": 0.8108833039388595
+    }
+}

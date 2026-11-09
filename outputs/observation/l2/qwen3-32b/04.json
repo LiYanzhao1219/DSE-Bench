@@ -1,0 +1,85 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-32b",
+    "data_num": "04",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彗星表面物质的形成机制研究",
+            "主带彗星水特征及其成因分析",
+            "主带彗星含水矿物研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-07 02:43:33",
+                "duration": 36000
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-05 10:40:17",
+                "duration": 43997
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-03 21:23:36",
+                "end_time": "2026-08-04 13:26:54",
+                "duration": 45858
+            },
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-13 02:40:17",
+                "duration": 36000
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-07 02:43:33",
+                "end_time": "2026-08-08 02:43:33",
+                "duration": 36000
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-05 10:40:17",
+                "end_time": "2026-08-06 02:43:33",
+                "duration": 40696
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-05 10:40:17",
+                "duration": 43997
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2026-08-05 10:40:17",
+                "end_time": "2026-08-05 10:50:17",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-06 02:53:33",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2026-08-07 02:43:33",
+                "end_time": "2026-08-07 02:53:33",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.8,
+        "payload_avg_ratio_first": 0.8,
+        "constraint_ratio_first": 0.0
+    }
+}

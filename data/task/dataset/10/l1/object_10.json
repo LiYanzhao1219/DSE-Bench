@@ -1,0 +1,66 @@
+[
+  {
+    "name": "表面物质分布研究",
+    "loadData": [
+      {
+        "pay_load": "光学导航相机",
+        "require_time/min": 1500
+      },
+      {
+        "pay_load": "近红外相机",
+        "require_time/min": 1500
+      },
+      {
+        "pay_load": "热红外相机",
+        "require_time/min": 1500
+      }
+    ]
+  },
+  {
+    "name": "有机-水蚀变过程探究",
+    "loadData": [
+      {
+        "pay_load": "近红外相机",
+        "require_time/min": 2500
+      },
+      {
+        "pay_load": "MASCOT",
+        "require_time/min": 8700
+      }
+    ]
+  },
+  {
+    "name": "形成过程反演研究",
+    "loadData": [
+      {
+        "pay_load": "光学导航相机",
+        "require_time/min": 2800
+      },
+      {
+        "pay_load": "热红外相机",
+        "require_time/min": 1600
+      },
+      {
+        "pay_load": "激光测距仪",
+        "require_time/min": 3000
+      }
+    ]
+  },
+  {
+    "name": "碰撞历史与动力学过程研究",
+    "loadData": [
+      {
+        "pay_load": "光学导航相机",
+        "require_time/min": 5000
+      },
+      {
+        "pay_load": "近红外相机",
+        "require_time/min": 2400
+      },
+      {
+        "pay_load": "激光测距仪",
+        "require_time/min": 4200
+      }
+    ]
+  }
+]

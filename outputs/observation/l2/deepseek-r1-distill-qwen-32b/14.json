@@ -1,0 +1,48 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-r1-distill-qwen-32b",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 16:11:46",
+                "end_time": "2019-10-08 21:55:06",
+                "duration": 38300
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 23:19:46",
+                "end_time": "2019-10-09 22:56:26",
+                "duration": 28000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 23:29:31",
+                "end_time": "2019-10-12 06:02:51",
+                "duration": 60000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-11 00:20:35",
+                "end_time": "2019-10-12 03:00:35",
+                "duration": 13800
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.3333333333333333,
+        "weighted_score": 0.23611111111111108
+    }
+}

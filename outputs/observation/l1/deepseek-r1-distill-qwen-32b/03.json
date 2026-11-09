@@ -1,0 +1,83 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-32b",
+    "data_num": "03",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究",
+            "太阳风和小天体表面物质的相互作用研究",
+            "小行星轨道长期演化与雅科夫斯基效应影响机理研究",
+            "分析小行星约普效应"
+        ],
+        "observation_plan": [
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-08-29 04:50:40",
+                "end_time": "2026-08-31 00:00:00",
+                "duration": 165920
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-08-01 16:03:21",
+                "end_time": "2026-08-04 13:26:54",
+                "duration": 206133
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-08-01 00:00:00",
+                "end_time": "2026-08-05 10:40:17",
+                "duration": 412817
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-26 20:29:28",
+                "end_time": "2026-08-28 18:51:39",
+                "duration": 201600
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-27 19:40:29",
+                "duration": 403200
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-27 19:40:29",
+                "end_time": "2026-08-29 04:50:40",
+                "duration": 165920
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-04 13:36:54",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2026-08-07 15:59:59",
+                "end_time": "2026-08-07 16:09:59",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2026-08-28 18:51:39",
+                "end_time": "2026-08-28 19:01:39",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.4166666666666667,
+        "objective_ratio_first": 0.36363636363636365,
+        "payload_avg_ratio_first": 0.5593962962962963,
+        "constraint_ratio_first": 0.0
+    }
+}

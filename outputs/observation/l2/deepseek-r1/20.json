@@ -1,0 +1,137 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-r1",
+    "data_num": "20",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗尾方向太阳风离子能谱与成分研究",
+            "彗尾方向电子能谱变化研究",
+            "彗发电子密度与温度变化研究",
+            "太阳风相互作用区磁场扰动研究",
+            "彗发离子成分与中性气体来源关联研究",
+            "彗核中性气体产率与遥感光谱对照研究",
+            "彗发活动强度与等离子体环境关联研究",
+            "彗发气尘环境与离子环境关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-03-25 06:40:17",
+                "end_time": "2016-03-26 11:00:17",
+                "duration": 102000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2016-03-25 07:02:41",
+                "end_time": "2016-03-25 22:19:21",
+                "duration": 55000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2016-03-25 20:45:51",
+                "end_time": "2016-03-26 10:55:51",
+                "duration": 51000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2016-03-26 10:01:42",
+                "end_time": "2016-03-27 18:31:42",
+                "duration": 117000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-26 10:18:08",
+                "end_time": "2016-03-27 12:24:48",
+                "duration": 94000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-26 10:20:09",
+                "end_time": "2016-03-27 20:13:29",
+                "duration": 122000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-26 10:48:49",
+                "end_time": "2016-03-27 12:38:49",
+                "duration": 93000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-27 11:23:55",
+                "end_time": "2016-03-28 09:20:35",
+                "duration": 79000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2016-03-28 10:33:08",
+                "end_time": "2016-03-29 07:56:28",
+                "duration": 77000
+            },
+            {
+                "name": "RPC-IES离子与电子能谱仪",
+                "start_time": "2016-03-29 12:52:18",
+                "end_time": "2016-03-30 17:12:18",
+                "duration": 102000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2016-03-29 13:13:54",
+                "end_time": "2016-03-30 23:23:54",
+                "duration": 123000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2016-03-29 13:29:28",
+                "end_time": "2016-03-30 11:59:28",
+                "duration": 81000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2016-03-29 13:40:20",
+                "end_time": "2016-03-30 16:03:40",
+                "duration": 95000
+            },
+            {
+                "name": "RPC-LAP朗缪尔探针",
+                "start_time": "2016-03-30 13:21:29",
+                "end_time": "2016-03-31 08:14:49",
+                "duration": 68000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2016-03-31 10:29:58",
+                "end_time": "2016-04-01 05:06:38",
+                "duration": 67000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2016-04-01 07:34:08",
+                "end_time": "2016-04-02 00:30:48",
+                "duration": 61000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2016-04-01 07:47:11",
+                "end_time": "2016-04-01 23:37:11",
+                "duration": 57000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2016-04-02 00:10:45",
+                "end_time": "2016-04-02 14:54:05",
+                "duration": 53000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "weighted_score": 0.6666666666666666
+    }
+}

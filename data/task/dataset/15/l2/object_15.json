@@ -1,0 +1,84 @@
+[
+  {
+      "name": "龙宫整体形状与大小参数测定",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1200
+          }
+      ]
+  },
+  {
+      "name": "龙宫自转状态与表面地标跟踪研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "ONC-W2广角导航相机",
+              "require_time/min": 1500
+          }
+      ]
+  },
+  {
+      "name": "龙宫表面巨石分布与地形起伏研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "龙宫撞击坑形貌与空间分布研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "龙宫表面颜色与近红外光谱对照研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "龙宫全球表面温度分布研究",
+      "loadData": [
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1200
+          }
+      ]
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+      "name": "龙宫晨昏表面温度差异研究",
+      "loadData": [
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 4200
+          },
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1500
+          }
+      ]
+  },
+  {
+      "name": "龙宫表面热惯量空间分布研究",
+      "loadData": [
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "龙宫巨石与周边表面的热响应差异研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "龙宫地形坡度对表面热响应的影响研究",
+      "loadData": [
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 3300
+          }
+      ]
+  },
+  {
+      "name": "龙宫表面反射颜色与温度分布关联研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 2700
+          }
+      ]
+  },
+  {
+      "name": "龙宫矿物光谱与热物理差异关联研究",
+      "loadData": [
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "龙宫晨昏观测方向下的整体形状对照研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "ONC-W2广角导航相机",
+              "require_time/min": 1500
+          },
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 2100
+          }
+      ]
+  }
+]

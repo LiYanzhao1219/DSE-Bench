@@ -1,0 +1,152 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-v3",
+    "data_num": "18",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗核自转状态与表面地标跟踪研究",
+            "彗核表面及浅层温度特征研究",
+            "初期彗发气体组成与产率研究",
+            "彗核地质单元与热辐射特征关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-08 11:49:48",
+                "end_time": "2014-08-09 10:03:08",
+                "duration": 80000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-08 11:49:48",
+                "end_time": "2014-08-09 12:33:08",
+                "duration": 89000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-09 11:55:24",
+                "end_time": "2014-08-10 05:58:44",
+                "duration": 65000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-09 16:56:57",
+                "end_time": "2014-08-10 05:10:17",
+                "duration": 44000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-10 06:21:43",
+                "end_time": "2014-08-11 01:48:23",
+                "duration": 70000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-10 12:06:48",
+                "end_time": "2014-08-10 18:30:08",
+                "duration": 23000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-10 14:56:49",
+                "end_time": "2014-08-10 21:20:09",
+                "duration": 23000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-11 13:38:23",
+                "end_time": "2014-08-11 14:28:23",
+                "duration": 3000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-12 05:23:51",
+                "end_time": "2014-08-13 01:57:11",
+                "duration": 74000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-12 10:23:41",
+                "end_time": "2014-08-12 15:40:21",
+                "duration": 19000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-12 10:25:47",
+                "end_time": "2014-08-12 17:39:07",
+                "duration": 26000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-13 07:39:01",
+                "end_time": "2014-08-13 08:12:21",
+                "duration": 2000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-13 14:42:31",
+                "end_time": "2014-08-14 16:15:51",
+                "duration": 92000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-13 18:39:07",
+                "end_time": "2014-08-14 16:35:47",
+                "duration": 79000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-14 15:31:31",
+                "end_time": "2014-08-15 14:34:51",
+                "duration": 83000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-14 17:28:24",
+                "end_time": "2014-08-15 06:31:44",
+                "duration": 47000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2014-08-10 06:14:43",
+                "end_time": "2014-08-10 06:24:43",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2014-08-11 04:42:06",
+                "end_time": "2014-08-11 04:52:06",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2014-08-12 05:17:50",
+                "end_time": "2014-08-12 05:27:50",
+                "duration": 600
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2014-08-13 02:10:42",
+                "end_time": "2014-08-13 02:20:42",
+                "duration": 600
+            },
+            {
+                "name": "第5次调姿",
+                "start_time": "2014-08-13 14:36:48",
+                "end_time": "2014-08-13 14:46:48",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.6672453703703705,
+        "weighted_score": 0.38908179012345684
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区颜色与地质单元划分"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:15:25",
+                "end_time": "2019-10-08 22:17:05",
+                "duration": 111700
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:18:30",
+                "end_time": "2019-10-08 15:00:10",
+                "duration": 85300
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:27:41",
+                "end_time": "2019-10-07 23:31:01",
+                "duration": 29000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-08 13:56:06",
+                "end_time": "2019-10-08 16:26:06",
+                "duration": 9000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:38:33",
+                "end_time": "2019-10-09 10:51:53",
+                "duration": 44000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-09 22:40:53",
+                "end_time": "2019-10-10 11:10:53",
+                "duration": 45000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 22:52:24",
+                "end_time": "2019-10-12 02:39:04",
+                "duration": 100000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:59:11",
+                "end_time": "2019-10-12 04:09:11",
+                "duration": 105000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:37:34",
+                "end_time": "2019-10-11 16:00:54",
+                "duration": 59000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.5697811447811447,
+        "weighted_score": 0.6482603815937149
+    }
+}

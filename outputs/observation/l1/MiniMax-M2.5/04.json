@@ -1,0 +1,28 @@
+{
+    "level": "l1",
+    "model_name": "MiniMax-M2.5",
+    "data_num": "04",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彗星挥发分特征及其成因分析"
+        ],
+        "observation_plan": [
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-12 12:40:17",
+                "duration": 36000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.2,
+        "payload_avg_ratio_first": 0.2,
+        "constraint_ratio_first": 0.0
+    }
+}

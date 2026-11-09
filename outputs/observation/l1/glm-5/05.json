@@ -1,0 +1,71 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "05",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体自转参数测定",
+            "小天体形状大小参数测定",
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究",
+            "小行星轨道长期演化与雅科夫斯基效应影响机理研究",
+            "分析小行星约普效应"
+        ],
+        "observation_plan": [
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-10-01 22:04:35",
+                "end_time": "2026-10-03 15:44:35",
+                "duration": "150000"
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-10-12 00:09:11",
+                "end_time": "2026-10-12 16:49:11",
+                "duration": "60000"
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-10-04 23:24:45",
+                "end_time": "2026-10-05 16:04:45",
+                "duration": "60000"
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-10-05 21:29:17",
+                "end_time": "2026-10-07 23:29:17",
+                "duration": "180000"
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-10-16 06:40:12",
+                "end_time": "2026-10-17 12:40:12",
+                "duration": "108000"
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-10-08 00:44:42",
+                "end_time": "2026-10-09 20:04:42",
+                "duration": "156000"
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-10-01 00:00:00",
+                "end_time": "2026-10-03 02:00:00",
+                "duration": "180000"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.3333333333333333,
+        "payload_avg_ratio_first": 0.875,
+        "constraint_ratio_first": 0.0
+    }
+}

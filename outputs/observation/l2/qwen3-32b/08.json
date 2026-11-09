@@ -1,0 +1,42 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-32b",
+    "data_num": "08",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "爱神星物理特性探测",
+            "小行星化学成分分析",
+            "小行星表面空间环境研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-01 15:51:58",
+                "end_time": "2001-05-04 15:51:58",
+                "duration": 259200
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-05 18:25:55",
+                "end_time": "2001-05-17 06:25:55",
+                "duration": 475200
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-07 19:42:53",
+                "end_time": "2001-05-13 19:42:53",
+                "duration": 172800
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.8333333333333334,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.4666666666666666,
+        "constraint_ratio_first": 0.0
+    }
+}

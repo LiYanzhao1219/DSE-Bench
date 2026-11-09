@@ -1,0 +1,65 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "11",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面含水矿物光谱特征研究",
+            "表面主要元素丰度空间差异研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-02 01:00:00",
+                "duration": 62100
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-01 00:26:12",
+                "end_time": "2027-01-01 15:26:12",
+                "duration": 2000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2027-01-02 06:15:30",
+                "end_time": "2027-01-03 02:15:30",
+                "duration": 1000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-03 09:00:00",
+                "end_time": "2027-01-04 10:00:00",
+                "duration": 90000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-03 09:09:10",
+                "end_time": "2027-01-04 05:09:10",
+                "duration": 33500
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-03 09:22:56",
+                "end_time": "2027-01-03 14:06:16",
+                "duration": 17000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2027-01-03 17:20:14",
+                "end_time": "2027-01-04 13:20:14",
+                "duration": 24000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.2857142857142857,
+        "payload_avg_ratio_first": 0.6929012345679012,
+        "weighted_score": 0.6595385067607289
+    }
+}

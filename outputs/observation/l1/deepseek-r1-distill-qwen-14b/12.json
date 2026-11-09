@@ -1,0 +1,91 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-14b",
+    "data_num": "12",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努表面矿物组成及空间分布研究",
+            "贝努含水矿物光谱特征分布研究",
+            "贝努地质单元与矿物特征关联研究",
+            "贝努表面颜色与反射光谱关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-06 11:31:25",
+                "end_time": "2019-03-07 09:51:25",
+                "duration": 72000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-06 11:37:51",
+                "end_time": "2019-03-08 11:02:51",
+                "duration": 164000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-06 12:13:06",
+                "end_time": "2019-03-07 08:13:06",
+                "duration": 3000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-03-07 08:25:46",
+                "end_time": "2019-03-08 04:42:26",
+                "duration": 27000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-08 03:41:54",
+                "end_time": "2019-03-08 18:58:34",
+                "duration": 4000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-03-09 17:43:43",
+                "end_time": "2019-03-10 13:43:43",
+                "duration": 4000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-03-09 17:44:13",
+                "end_time": "2019-03-11 02:30:53",
+                "duration": 8000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-03-09 17:58:29",
+                "end_time": "2019-03-10 16:45:09",
+                "duration": 28600
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-03-10 18:11:39",
+                "end_time": "2019-03-11 06:58:19",
+                "duration": 44000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-03-11 03:06:32",
+                "end_time": "2019-03-11 12:49:52",
+                "duration": 23000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-03-11 19:01:14",
+                "end_time": "2019-03-11 20:07:54",
+                "duration": 1000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.5714285714285714,
+        "payload_avg_ratio_first": 0.7827932098765432,
+        "weighted_score": 0.7847405937683716
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "level": "l2",
+    "model_name": "anthropic/claude-sonnet-4.6",
+    "data_num": "02",
+    "generated": false,
+    "reason": "error",
+    "plan": {},
+    "metrics": {
+        "gen_success": 0.0,
+        "accuracy_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.0,
+        "constraint_ratio_first": 0.0
+    },
+    "error": "Expecting value: line 721 column 1 (char 3960)"
+}

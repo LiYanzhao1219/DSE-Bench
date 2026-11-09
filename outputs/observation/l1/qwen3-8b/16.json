@@ -1,0 +1,50 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-8b",
+    "data_num": "16",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [],
+        "observation_plan": [
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-10-27 18:02:14",
+                "end_time": "2018-10-27 20:15:34",
+                "duration": 3000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-10-27 18:02:14",
+                "end_time": "2018-10-27 20:15:34",
+                "duration": 9600
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2018-10-28 17:15:46",
+                "end_time": "2018-10-29 00:29:06",
+                "duration": 11000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2018-10-29 05:58:55",
+                "end_time": "2018-10-29 08:28:55",
+                "duration": 7000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-11-01 02:30:27",
+                "end_time": "2018-11-01 14:43:47",
+                "duration": 6000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.1000293944738389,
+        "weighted_score": 0.03334313149127963
+    }
+}

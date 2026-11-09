@@ -1,0 +1,78 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-v3",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小行星化学成分分析",
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-22 07:47:25",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 209388
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-06-16 14:35:26",
+                "end_time": "2001-06-18 19:32:39",
+                "duration": 188233
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-26 16:26:24",
+                "duration": 328649
+            },
+            {
+                "name": "磁力计",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-06-14 21:53:34",
+                "duration": 1647250
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-06-14 21:53:34",
+                "duration": 1647250
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2001-05-24 18:57:13",
+                "end_time": "2001-05-24 18:57:23",
+                "duration": 10
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-26 16:26:34",
+                "duration": 10
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2001-06-14 21:53:34",
+                "end_time": "2001-06-14 21:53:44",
+                "duration": 10
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2001-06-18 19:32:39",
+                "end_time": "2001-06-18 19:32:49",
+                "duration": 10
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.6666666666666666,
+        "constraint_ratio_first": 0.0
+    }
+}

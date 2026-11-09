@@ -1,0 +1,48 @@
+{
+    "level": "l2",
+    "model_name": "glm-5",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-08-07 06:37:43",
+                "duration": 5083200
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-08-04 13:44:37",
+                "duration": 4684200
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-07-06 12:44:37",
+                "duration": 2160000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-07-09 11:37:43",
+                "duration": 2646000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.8,
+        "constraint_ratio_first": 0.0
+    }
+}

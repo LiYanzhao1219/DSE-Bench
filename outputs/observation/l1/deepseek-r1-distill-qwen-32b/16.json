@@ -1,0 +1,83 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-32b",
+    "data_num": "16",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "龙宫不同颜色单元的矿物光谱差异研究",
+            "龙宫巨石与周边表面的光谱差异研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-10-27 17:38:27",
+                "end_time": "2018-10-28 19:23:27",
+                "duration": 900
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-10-27 18:24:35",
+                "end_time": "2018-10-27 23:41:15",
+                "duration": 63300
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-10-28 08:24:41",
+                "end_time": "2018-10-28 23:49:41",
+                "duration": 30000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2018-10-28 17:19:25",
+                "end_time": "2018-10-28 19:16:05",
+                "duration": 9700
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2018-10-29 06:11:30",
+                "end_time": "2018-10-29 10:04:50",
+                "duration": 8000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-10-29 23:26:45",
+                "end_time": "2018-10-30 20:38:25",
+                "duration": 79000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-10-30 17:04:23",
+                "end_time": "2018-10-31 10:42:43",
+                "duration": 7000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-11-01 02:03:39",
+                "end_time": "2018-11-01 05:06:59",
+                "duration": 5000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-11-01 02:27:46",
+                "end_time": "2018-11-01 19:24:26",
+                "duration": 6000
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2018-11-02 09:53:37",
+                "end_time": "2018-11-02 12:40:17",
+                "duration": 13000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.2857142857142857,
+        "payload_avg_ratio_first": 0.3834362139917695,
+        "weighted_score": 0.5563834999020184
+    }
+}

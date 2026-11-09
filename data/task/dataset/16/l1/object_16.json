@@ -1,0 +1,97 @@
+[
+  {
+      "name": "龙宫含水矿物吸收特征空间分布研究",
+      "loadData": [
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "龙宫不同颜色单元的矿物光谱差异研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "龙宫巨石与周边表面的光谱差异研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "龙宫矿物光谱特征与地形坡度关联研究",
+      "loadData": [
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "龙宫颜色单元的热响应差异研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-T多波段望远相机",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "龙宫全球形状与局部观测区域对应关系研究",
+      "loadData": [
+          {
+              "pay_load": "ONC-W1广角导航相机",
+              "require_time/min": 1500
+          },
+          {
+              "pay_load": "ONC-W2广角导航相机",
+              "require_time/min": 1200
+          },
+          {
+              "pay_load": "LIDAR激光测距仪",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "龙宫表面热辐射与近红外光谱关联研究",
+      "loadData": [
+          {
+              "pay_load": "TIR热红外成像仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "NIRS3近红外光谱仪",
+              "require_time/min": 2100
+          }
+      ]
+  }
+]

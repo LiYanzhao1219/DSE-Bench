@@ -1,0 +1,42 @@
+{
+    "level": "l2",
+    "model_name": "kimi-k2.5",
+    "data_num": "08",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "爱神星物理特性探测",
+            "小行星化学成分分析",
+            "小行星表面空间环境研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-07 19:42:53",
+                "end_time": "2001-05-09 21:02:53",
+                "duration": "192000"
+            },
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-07 19:42:53",
+                "end_time": "2001-05-11 03:42:53",
+                "duration": "288000"
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-07 19:42:53",
+                "end_time": "2001-05-12 09:42:53",
+                "duration": "396000"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.6666666666666666,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.5,
+        "constraint_ratio_first": 0.0
+    }
+}

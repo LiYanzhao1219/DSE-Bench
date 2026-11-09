@@ -1,0 +1,82 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1",
+    "data_num": "18",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "彗核自转状态与表面地标跟踪研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-08 11:34:43",
+                "end_time": "2014-08-09 13:11:23",
+                "duration": 92200
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2014-08-09 10:04:56",
+                "end_time": "2014-08-09 14:48:16",
+                "duration": 17000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-09 11:23:04",
+                "end_time": "2014-08-09 17:13:04",
+                "duration": 21000
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2014-08-10 05:40:21",
+                "end_time": "2014-08-10 06:13:41",
+                "duration": 2000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2014-08-10 06:19:13",
+                "end_time": "2014-08-10 07:59:13",
+                "duration": 6000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2014-08-12 05:21:50",
+                "end_time": "2014-08-12 08:58:30",
+                "duration": 13000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2014-08-13 01:54:52",
+                "end_time": "2014-08-13 02:44:52",
+                "duration": 3000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2014-08-13 14:34:44",
+                "end_time": "2014-08-14 15:01:24",
+                "duration": 88000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2014-08-14 15:05:28",
+                "end_time": "2014-08-14 19:48:48",
+                "duration": 17000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2014-08-14 15:34:30",
+                "end_time": "2014-08-15 10:44:30",
+                "duration": 69000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.125,
+        "payload_avg_ratio_first": 0.2638337742504409,
+        "weighted_score": 0.4629445914168136
+    }
+}

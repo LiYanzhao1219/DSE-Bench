@@ -1,0 +1,42 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "02",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体内部结构研究",
+            "太阳风和小天体表面物质的相互作用研究",
+            "飞行路径上太阳风动力学演化过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "探测雷达",
+                "start_time": "2026-08-03 12:02:12",
+                "end_time": "2026-08-04 04:42:12",
+                "duration": "60000"
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-08-04 11:20:55",
+                "end_time": "2026-08-05 04:00:55",
+                "duration": "60000"
+            },
+            {
+                "name": "磁强计",
+                "start_time": "2026-08-03 23:41:55",
+                "end_time": "2026-08-04 16:21:55",
+                "duration": "60000"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.4444444444444444,
+        "payload_avg_ratio_first": 0.3333333333333333,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "level": "l1",
+    "model_name": "qwen-max",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-06-08 21:37:43",
+                "duration": 21600
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-11 10:44:37",
+                "duration": 28800
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-11 10:44:37",
+                "duration": 28800
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-01 00:00:00",
+                "end_time": "2018-06-01 02:20:00",
+                "duration": 8400
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-06-02 05:54:44",
+                "duration": 7200
+            }
+        ],
+        "achieved_objectives": [],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.040525750111957005,
+        "constraint_ratio_first": 0.0
+    }
+}

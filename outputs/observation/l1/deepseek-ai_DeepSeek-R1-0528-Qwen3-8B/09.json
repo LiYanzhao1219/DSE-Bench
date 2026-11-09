@@ -1,0 +1,43 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-08-07 06:13:02",
+                "end_time": "2018-08-24 17:43:02",
+                "duration": 701988
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-08-04 13:14:09",
+                "end_time": "2018-08-23 01:03:50",
+                "duration": 4296699
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-08-05 13:33:48",
+                "end_time": "2018-08-23 01:03:50",
+                "duration": 4323558
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.0,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.6,
+        "constraint_ratio_first": 0.0
+    }
+}

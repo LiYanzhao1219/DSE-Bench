@@ -1,0 +1,82 @@
+{
+    "level": "l2",
+    "model_name": "openai/gpt-5.4",
+    "data_num": "01",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体自转参数测定",
+            "小天体形状大小参数测定",
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-05-26 00:21:00",
+                "end_time": "2026-05-27 09:41:00",
+                "duration": "120000"
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-05-27 09:41:00",
+                "end_time": "2026-05-29 10:13:20",
+                "duration": "174140"
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-05-29 10:13:20",
+                "end_time": "2026-05-31 00:13:20",
+                "duration": "136800"
+            },
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-06-21 01:27:30",
+                "end_time": "2026-06-23 20:49:47",
+                "duration": "242537"
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-06-19 01:12:00",
+                "end_time": "2026-06-20 07:12:00",
+                "duration": "108000"
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-05-30 00:48:00",
+                "end_time": "2026-05-31 20:08:00",
+                "duration": "156000"
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-06-01 14:00:00",
+                "end_time": "2026-06-02 06:40:00",
+                "duration": "60000"
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2026-05-31 20:08:00",
+                "end_time": "2026-05-31 20:18:00",
+                "duration": "600"
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2026-06-20 07:12:00",
+                "end_time": "2026-06-20 07:22:00",
+                "duration": "600"
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.7142857142857143,
+        "objective_ratio_first": 0.7142857142857143,
+        "payload_avg_ratio_first": 0.8984103835978835,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-14b",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究",
+            "候选采样区矿物组成与地形关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:09:42",
+                "end_time": "2019-10-08 23:56:22",
+                "duration": 57000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:15:26",
+                "end_time": "2019-10-08 22:22:06",
+                "duration": 7300
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:29:43",
+                "end_time": "2019-10-07 20:29:43",
+                "duration": 1000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-08 14:05:43",
+                "end_time": "2019-10-09 07:19:03",
+                "duration": 4000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:30:25",
+                "end_time": "2019-10-10 00:03:45",
+                "duration": 1700
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:54:40",
+                "end_time": "2019-10-12 03:48:00",
+                "duration": 7000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 23:19:48",
+                "end_time": "2019-10-12 00:03:08",
+                "duration": 6300
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-12 01:13:23",
+                "end_time": "2019-10-12 08:43:23",
+                "duration": 2000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-13 02:03:19",
+                "end_time": "2019-10-13 03:26:39",
+                "duration": 1000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.5477225963337075,
+        "weighted_score": 0.34924086544456917
+    }
+}

@@ -1,0 +1,106 @@
+[
+  {
+      "name": "彗核整体形状与表面形貌研究",
+      "loadData": [
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "OSIRIS广角相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "彗核自转状态与表面地标跟踪研究",
+      "loadData": [
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "OSIRIS广角相机",
+              "require_time/min": 1500
+          }
+      ]
+  },
+  {
+      "name": "彗核表面冰与矿物光谱特征研究",
+      "loadData": [
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "彗核表面及浅层温度特征研究",
+      "loadData": [
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "MIRO微波光谱仪",
+              "require_time/min": 2700
+          }
+      ]
+  },
+  {
+      "name": "初期彗发气体组成与产率研究",
+      "loadData": [
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "MIRO微波光谱仪",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "彗发尘埃通量与喷流形态关联研究",
+      "loadData": [
+          {
+              "pay_load": "GIADA尘埃撞击分析与收集仪",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "OSIRIS广角相机",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "彗核地质单元与热辐射特征关联研究",
+      "loadData": [
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "太阳风与初期彗发等离子体相互作用研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-MAG磁强计",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 2400
+          }
+      ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-8b",
+    "data_num": "10",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [],
+        "observation_plan": [
+            {
+                "name": "",
+                "start_time": "1970-01-01 00:00:00",
+                "end_time": "1970-01-01 00:00:00",
+                "duration": 0
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.0,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "13",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努热惯量空间差异研究",
+            "贝努表面坡度与热辐射特征关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-10 07:47:35",
+                "end_time": "2019-05-10 20:00:55",
+                "duration": 43000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-10 08:01:15",
+                "end_time": "2019-05-11 06:31:15",
+                "duration": 2000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-11 05:20:55",
+                "end_time": "2019-05-11 06:10:55",
+                "duration": 1500
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-11 08:57:44",
+                "end_time": "2019-05-11 09:47:44",
+                "duration": 1000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-11 19:48:34",
+                "end_time": "2019-05-12 09:25:14",
+                "duration": 12000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-12 08:39:41",
+                "end_time": "2019-05-12 08:56:21",
+                "duration": 2000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-13 03:20:28",
+                "end_time": "2019-05-14 03:47:08",
+                "duration": 500
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-13 04:15:07",
+                "end_time": "2019-05-13 21:45:07",
+                "duration": 63000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-13 21:04:19",
+                "end_time": "2019-05-14 13:27:39",
+                "duration": 295000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-15 14:12:20",
+                "end_time": "2019-05-16 13:32:20",
+                "duration": 74000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-16 12:02:10",
+                "end_time": "2019-05-16 22:02:10",
+                "duration": 23000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.2857142857142857,
+        "payload_avg_ratio_first": 0.4299272486772487,
+        "weighted_score": 0.23854717813051143
+    }
+}

@@ -1,0 +1,111 @@
+[
+  {
+      "name": "近日点附近彗核冰暴露区光谱特征研究",
+      "loadData": [
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "近日点附近彗发气体组成与产率变化研究",
+      "loadData": [
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "MIRO微波光谱仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "彗发气体光谱与原位组分对照研究",
+      "loadData": [
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 2700
+          }
+      ]
+  },
+  {
+      "name": "彗发尘埃颗粒化学组成研究",
+      "loadData": [
+          {
+              "pay_load": "COSIMA尘埃质谱仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "彗发尘埃质量与动量分布研究",
+      "loadData": [
+          {
+              "pay_load": "GIADA尘埃撞击分析与收集仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "彗发气体与尘埃通量耦合变化研究",
+      "loadData": [
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "GIADA尘埃撞击分析与收集仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "彗核喷流源区与喷流形态关联研究",
+      "loadData": [
+          {
+              "pay_load": "OSIRIS窄角相机",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "OSIRIS广角相机",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "彗核热辐射与挥发活动关联研究",
+      "loadData": [
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "MIRO微波光谱仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "近日点附近彗发磁场与离子环境变化研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-MAG磁强计",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 2700
+          }
+      ]
+  }
+]

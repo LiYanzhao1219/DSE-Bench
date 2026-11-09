@@ -1,0 +1,62 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-max",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-17 08:44:37",
+                "duration": 540000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-16 22:44:37",
+                "duration": 504000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-15 16:44:37",
+                "duration": 396000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-15 16:44:37",
+                "end_time": "2018-06-20 16:44:37",
+                "duration": 432000
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-20 16:54:37",
+                "end_time": "2018-06-26 17:54:37",
+                "duration": 522000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2018-06-20 16:44:37",
+                "end_time": "2018-06-20 16:54:37",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

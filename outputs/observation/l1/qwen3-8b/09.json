@@ -1,0 +1,86 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-8b",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-07-04 01:37:43",
+                "duration": 297600
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-07-08 00:07:07",
+                "duration": 336000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-07-06 12:44:37",
+                "duration": 326400
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-01 00:00:00",
+                "end_time": "2018-08-30 00:00:00",
+                "duration": 946080
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-08-29 04:48:15",
+                "duration": 831600
+            },
+            {
+                "name": "微/纳小行星实验机器人",
+                "start_time": "2018-07-17 08:35:05",
+                "end_time": "2018-07-29 02:52:11",
+                "duration": 382200
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2018-07-04 01:37:43",
+                "end_time": "2018-07-04 01:39:43",
+                "duration": 120
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2018-07-08 00:07:07",
+                "end_time": "2018-07-08 00:09:07",
+                "duration": 120
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2018-07-06 12:44:37",
+                "end_time": "2018-07-06 12:46:37",
+                "duration": 120
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2018-08-23 01:03:50",
+                "end_time": "2018-08-23 01:05:50",
+                "duration": 120
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.4166666666666667,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.8084040404040405,
+        "constraint_ratio_first": 0.0
+    }
+}

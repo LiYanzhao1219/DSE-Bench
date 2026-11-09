@@ -1,0 +1,48 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "01",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-05-28 00:32:30",
+                "end_time": "2026-05-29 06:32:30",
+                "duration": "108000"
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-05-28 15:02:36",
+                "end_time": "2026-05-29 01:02:36",
+                "duration": "36000"
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-06-01 14:00:00",
+                "end_time": "2026-06-02 06:40:00",
+                "duration": "60000"
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-05-30 00:48:00",
+                "end_time": "2026-06-01 20:08:00",
+                "duration": "156000"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.4571428571428572,
+        "constraint_ratio_first": 0.0
+    }
+}

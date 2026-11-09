@@ -1,0 +1,54 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-14b",
+    "data_num": "10",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2031-07-03 15:13:02",
+                "end_time": "2031-07-07 12:33:22",
+                "duration": 300000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-09 03:14:07",
+                "duration": 150000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-06 00:14:07",
+                "duration": 90000
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2031-07-01 00:00:00",
+                "end_time": "2031-07-05 09:00:00",
+                "duration": 522000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2031-07-01 09:36:37",
+                "end_time": "2031-07-06 09:36:37",
+                "duration": 180000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.8,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.9303571428571429,
+        "constraint_ratio_first": 1.0
+    }
+}

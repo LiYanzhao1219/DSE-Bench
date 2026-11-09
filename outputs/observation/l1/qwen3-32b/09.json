@@ -1,0 +1,65 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "形成过程反演研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-06-13 19:07:43",
+                "duration": 414000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-15 16:14:37",
+                "duration": 360000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-16 08:44:37",
+                "duration": 432000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-06-07 11:54:44",
+                "duration": 432000
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-08-07 06:13:02",
+                "end_time": "2018-08-12 19:33:02",
+                "duration": 432000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-08-05 13:33:48",
+                "end_time": "2018-08-11 15:33:48",
+                "duration": 864000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-06-07 11:54:44",
+                "duration": 432000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.7142857142857143,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.7428571428571429,
+        "constraint_ratio_first": 0.0
+    }
+}

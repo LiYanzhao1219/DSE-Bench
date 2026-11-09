@@ -1,0 +1,100 @@
+{
+    "level": "l1",
+    "model_name": "MiniMax-M2.5",
+    "data_num": "01",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体轨道参数测定",
+            "小天体自转参数测定",
+            "小天体形状大小参数测定",
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-05-25 05:10:12",
+                "end_time": "2026-05-28 00:32:30",
+                "duration": 241534
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-05-26 00:21:00",
+                "end_time": "2026-05-28 15:02:36",
+                "duration": 231696
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-05-25 01:21:22",
+                "end_time": "2026-05-29 10:13:20",
+                "duration": 371518
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-05-28 00:32:30",
+                "end_time": "2026-05-30 00:48:00",
+                "duration": 172530
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-05-28 15:02:36",
+                "end_time": "2026-05-31 10:00:00",
+                "duration": 245064
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-05-30 00:48:00",
+                "end_time": "2026-06-19 01:12:00",
+                "duration": 1725840
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-06-01 14:00:00",
+                "end_time": "2026-06-16 12:00:00",
+                "duration": 1292400
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-06-19 01:12:00",
+                "end_time": "2026-06-21 01:27:30",
+                "duration": 172530
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-06-17 16:00:00",
+                "end_time": "2026-06-20 10:57:23",
+                "duration": 239438
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-06-20 10:57:23",
+                "end_time": "2026-06-23 01:38:59",
+                "duration": 226096
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-06-19 15:46:40",
+                "end_time": "2026-06-24 00:00:00",
+                "duration": 380000
+            },
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-06-21 01:27:30",
+                "end_time": "2026-06-23 20:49:47",
+                "duration": 238337
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

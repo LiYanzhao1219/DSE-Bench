@@ -1,0 +1,61 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-r1-distill-qwen-32b",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-08 15:37:43",
+                "end_time": "2018-06-15 00:37:43",
+                "duration": 900000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-18 12:44:37",
+                "duration": 840000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-17 02:44:37",
+                "duration": 660000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-02 03:54:44",
+                "end_time": "2018-06-10 03:54:44",
+                "duration": 720000
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-01 00:00:00",
+                "end_time": "2018-06-12 00:00:00",
+                "duration": 870000
+            },
+            {
+                "name": "微/纳小行星实验机器人",
+                "start_time": "2018-07-17 08:35:05",
+                "end_time": "2018-07-23 08:35:05",
+                "duration": 350000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5833333333333334,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "level": "l2",
+    "model_name": "google/gemini-3.1-pro-preview",
+    "data_num": "10",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MASCOT",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-10 12:34:07",
+                "duration": 522000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-05 14:14:07",
+                "duration": 96000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-06 05:14:07",
+                "duration": 150000
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-07 22:54:07",
+                "duration": 300000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2031-07-05 14:14:07",
+                "end_time": "2031-07-08 12:14:07",
+                "duration": 252000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.7,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 0.0
+    }
+}

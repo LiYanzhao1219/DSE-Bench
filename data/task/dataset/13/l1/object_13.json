@@ -1,0 +1,97 @@
+[
+  {
+      "name": "贝努表面温度日变化特征研究",
+      "loadData": [
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 4200
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "贝努热惯量空间差异研究",
+      "loadData": [
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "贝努巨石与周边表面的热响应差异研究",
+      "loadData": [
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "PolyCam高分辨率相机",
+              "require_time/min": 3600
+          }
+      ]
+  },
+  {
+      "name": "贝努表面坡度与热辐射特征关联研究",
+      "loadData": [
+          {
+              "pay_load": "OLA激光测高仪",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 3300
+          }
+      ]
+  },
+  {
+      "name": "贝努表面反照率与温度分布关联研究",
+      "loadData": [
+          {
+              "pay_load": "MapCam多光谱相机",
+              "require_time/min": 2100
+          },
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 2700
+          }
+      ]
+  },
+  {
+      "name": "贝努矿物光谱与热辐射光谱对照研究",
+      "loadData": [
+          {
+              "pay_load": "OVIRS可见红外光谱仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "OTES热辐射光谱仪",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "贝努元素丰度与地质单元对应关系研究",
+      "loadData": [
+          {
+              "pay_load": "REXIS X射线成像光谱仪",
+              "require_time/min": 1500
+          },
+          {
+              "pay_load": "MapCam多光谱相机",
+              "require_time/min": 1800
+          }
+      ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "name": "小天体表面精细形貌研究",
+    "loadData": [
+      {
+        "pay_load": "多光谱相机",
+        "require_time/min": 3000
+      },
+      {
+        "pay_load": "中视场彩色相机",
+        "require_time/min": 1200
+      },
+      {
+        "pay_load": "激光一体化导航敏感器",
+        "require_time/min": 3000
+      },
+      {
+        "pay_load": "窄视场导航敏感器",
+        "require_time/min": 2400
+      }
+    ]
+  },
+  {
+    "name": "小天体表面物质成分研究",
+    "loadData": [
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 1500
+      },
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 600
+      },
+      {
+        "pay_load": "多光谱相机",
+        "require_time/min": 600
+      }
+    ]
+  },
+  {
+    "name": "小天体内部结构研究",
+    "loadData": [
+      {
+        "pay_load": "探测雷达",
+        "require_time/min": 1000
+      }
+    ]
+  },
+  {
+    "name": "太阳风和小天体表面物质的相互作用研究",
+    "loadData": [
+      {
+        "pay_load": "带电粒子与中性粒子分析仪",
+        "require_time/min": 800
+      }
+    ]
+  },
+  {
+    "name": "磁化或非磁化小尺度星体对太阳风扰动的研究",
+    "loadData": [
+      {
+        "pay_load": "磁强计",
+        "require_time/min": 1000
+      },
+      {
+        "pay_load": "带电粒子与中性粒子分析仪",
+        "require_time/min": 1000
+      }
+    ]
+  },
+  {
+    "name": "飞行路径上太阳风动力学演化过程研究",
+    "loadData": [
+      {
+        "pay_load": "磁强计",
+        "require_time/min": 600
+      },
+      {
+        "pay_load": "带电粒子与中性粒子分析仪",
+        "require_time/min": 500
+      }
+    ]
+  },
+  {
+    "name": "基于多源数据的小行星精密定轨方法研究",
+    "loadData": [
+      {
+        "pay_load": "窄视场导航敏感器",
+        "require_time/min": 3000
+      }
+    ]
+  },
+  {
+    "name": "小行星轨道长期演化与雅科夫斯基效应影响机理研究",
+    "loadData": [
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 1000
+      },
+      {
+        "pay_load": "窄视场导航敏感器",
+        "require_time/min": 1600
+      }
+    ]
+  },
+  {
+    "name": "分析小行星约普效应",
+    "loadData": [
+      {
+        "pay_load": "窄视场导航敏感器",
+        "require_time/min": 2500
+      },
+      {
+        "pay_load": "中视场彩色相机",
+        "require_time/min": 2500
+      },
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 900
+      },
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 1600
+      }
+    ]
+  }
+]

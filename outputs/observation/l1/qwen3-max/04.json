@@ -1,0 +1,56 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-max",
+    "data_num": "04",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彩星表面物质的形成机制研究",
+            "主带彩星水特征及其成因分析",
+            "主带彩星有机物特征及其成因研究",
+            "主带彩星含水矿物研究",
+            "主带彩星挥发分特征及其成因分析"
+        ],
+        "observation_plan": [
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-07 15:30:13",
+                "duration": 132400
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-05 15:06:54",
+                "duration": 92400
+            },
+            {
+                "name": "热辀射光谱仪",
+                "start_time": "2026-08-03 21:23:36",
+                "end_time": "2026-08-04 14:43:36",
+                "duration": 62400
+            },
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-13 04:40:17",
+                "duration": 93600
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-12 09:20:17",
+                "duration": 24000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.6,
+        "objective_ratio_first": 0.2,
+        "payload_avg_ratio_first": 0.8,
+        "constraint_ratio_first": 0.0
+    }
+}

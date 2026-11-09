@@ -1,0 +1,74 @@
+{
+    "level": "l2",
+    "model_name": "qwen-max",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:18:30",
+                "end_time": "2019-10-08 14:55:10",
+                "duration": 85000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:22:27",
+                "end_time": "2019-10-07 18:59:07",
+                "duration": 13000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:29:28",
+                "end_time": "2019-10-07 18:16:08",
+                "duration": 10000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-08 13:51:18",
+                "end_time": "2019-10-09 13:27:58",
+                "duration": 85000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:41:13",
+                "end_time": "2019-10-09 15:04:33",
+                "duration": 59000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-09 22:37:27",
+                "end_time": "2019-10-10 11:57:27",
+                "duration": 48000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:38:56",
+                "end_time": "2019-10-11 02:42:16",
+                "duration": 11000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-12 01:00:10",
+                "end_time": "2019-10-13 02:16:50",
+                "duration": 91000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-12 02:17:38",
+                "end_time": "2019-10-12 03:24:18",
+                "duration": 4000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.4266367377478488,
+        "weighted_score": 0.1422122459159496
+    }
+}

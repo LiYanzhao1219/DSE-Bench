@@ -1,0 +1,103 @@
+{
+    "level": "l2",
+    "model_name": "MiniMax-M2.5",
+    "data_num": "06",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彗星水特征及其成因分析",
+            "主带彗星挥发分特征及其成因分析",
+            "主带彗星微磁层研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "磁强计",
+                "start_time": "2028-05-14 03:25:09",
+                "end_time": "2028-05-15 04:25:09",
+                "duration": 540000
+            },
+            {
+                "name": "调姿",
+                "start_time": "2028-05-15 04:25:09",
+                "end_time": "2028-05-15 04:35:09",
+                "duration": 600
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2028-05-07 13:04:45",
+                "end_time": "2028-05-07 21:24:45",
+                "duration": 180000
+            },
+            {
+                "name": "调姿",
+                "start_time": "2028-05-07 21:24:45",
+                "end_time": "2028-05-07 21:34:45",
+                "duration": 600
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2028-05-08 00:44:42",
+                "end_time": "2028-05-08 10:44:42",
+                "duration": 216000
+            },
+            {
+                "name": "调姿",
+                "start_time": "2028-05-08 10:44:42",
+                "end_time": "2028-05-08 10:54:42",
+                "duration": 600
+            },
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2028-05-16 06:40:00",
+                "end_time": "2028-05-16 16:40:00",
+                "duration": 216000
+            },
+            {
+                "name": "调姿",
+                "start_time": "2028-05-16 16:40:00",
+                "end_time": "2028-05-16 16:50:00",
+                "duration": 600
+            },
+            {
+                "name": "磁强计",
+                "start_time": "2028-05-16 16:50:00",
+                "end_time": "2028-05-18 01:50:00",
+                "duration": 324000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2028-05-15 04:25:09",
+                "end_time": "2028-05-15 04:35:09",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2028-05-07 21:24:45",
+                "end_time": "2028-05-07 21:34:45",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2028-05-08 10:44:42",
+                "end_time": "2028-05-08 10:54:42",
+                "duration": 600
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2028-05-16 16:40:00",
+                "end_time": "2028-05-16 16:50:00",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.6666666666666666,
+        "constraint_ratio_first": 0.0
+    }
+}

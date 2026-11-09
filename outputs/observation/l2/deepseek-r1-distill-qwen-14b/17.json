@@ -1,0 +1,111 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-r1-distill-qwen-14b",
+    "data_num": "17",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [],
+        "observation_plan": [
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-09 23:19:18",
+                "end_time": "2019-08-10 03:45:58",
+                "duration": 25000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-10 01:26:25",
+                "end_time": "2019-08-10 02:33:05",
+                "duration": 1300
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-10 20:45:53",
+                "end_time": "2019-08-10 23:15:53",
+                "duration": 1000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2019-08-11 12:18:30",
+                "end_time": "2019-08-11 12:51:50",
+                "duration": 1400
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2019-08-11 18:08:51",
+                "end_time": "2019-08-11 18:58:51",
+                "duration": 100
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2019-08-12 00:16:24",
+                "end_time": "2019-08-12 01:23:04",
+                "duration": 800
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-13 09:44:54",
+                "end_time": "2019-08-13 12:31:34",
+                "duration": 35000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-13 16:20:19",
+                "end_time": "2019-08-13 17:43:39",
+                "duration": 6000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2019-08-14 03:23:56",
+                "end_time": "2019-08-14 03:57:16",
+                "duration": 1900
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2019-08-14 19:52:05",
+                "end_time": "2019-08-15 00:02:05",
+                "duration": 4800
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2019-08-15 05:13:44",
+                "end_time": "2019-08-15 06:37:04",
+                "duration": 1000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2019-08-15 13:38:03",
+                "end_time": "2019-08-15 14:28:03",
+                "duration": 2000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第2次调姿",
+                "start_time": "2019-08-12 15:11:08",
+                "end_time": "2019-08-12 15:21:08",
+                "duration": 600
+            },
+            {
+                "name": "第1次调姿",
+                "start_time": "2019-08-14 19:52:05",
+                "end_time": "2019-08-14 20:02:05",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2019-08-15 04:10:04",
+                "end_time": "2019-08-15 04:20:04",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.0,
+        "payload_avg_ratio_first": 0.08547912992357437,
+        "weighted_score": 0.028493043307858124
+    }
+}

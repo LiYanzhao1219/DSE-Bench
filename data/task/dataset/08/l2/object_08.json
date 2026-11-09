@@ -1,0 +1,46 @@
+[
+  {
+    "name": "爱神星物理特性探测",
+    "loadData": [
+      {
+        "pay_load": "多光谱成像仪",
+        "require_time/min": 4800
+      }
+    ]
+  },
+  {
+    "name": "小行星化学成分分析",
+    "loadData": [
+      {
+        "pay_load": "近红外光谱仪",
+        "require_time/min": 6600
+      }
+    ]
+  },
+  {
+    "name": "小行星表面空间环境研究",
+    "loadData": [
+      {
+        "pay_load": "X射线/伽马射线光谱仪",
+        "require_time/min": 3200
+      }
+    ]
+  },
+  {
+    "name": "小行星活动状态监测",
+    "loadData": [
+      {
+        "pay_load": "激光测距仪",
+        "require_time/min": 3000
+      },
+      {
+        "pay_load": "磁力计",
+        "require_time/min": 3000
+      },
+      {
+        "pay_load": "无线电科学和重力实验装置",
+        "require_time/min": 3000
+      }
+    ]
+  }
+]

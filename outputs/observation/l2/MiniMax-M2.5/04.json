@@ -1,0 +1,73 @@
+{
+    "level": "l2",
+    "model_name": "MiniMax-M2.5",
+    "data_num": "04",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "主带彗星水特征及其成因分析",
+            "主带彗星有机物特征及其成因研究",
+            "主带彗星含水矿物研究",
+            "主带彗星挥发分特征及其成因分析"
+        ],
+        "observation_plan": [
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-03 21:23:36",
+                "end_time": "2026-08-06 02:43:33",
+                "duration": 278397
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-06 10:10:33",
+                "duration": 26820
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 10:10:33",
+                "end_time": "2026-08-06 20:10:33",
+                "duration": 36000
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-07 15:59:59",
+                "end_time": "2026-08-07 22:39:59",
+                "duration": 24000
+            },
+            {
+                "name": "喷发物分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-12 12:40:17",
+                "duration": 36000
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-08-12 02:40:17",
+                "end_time": "2026-08-12 09:20:17",
+                "duration": 24000
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-26 20:29:28",
+                "end_time": "2026-08-27 01:02:28",
+                "duration": 9180
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-27 19:40:29",
+                "end_time": "2026-08-27 22:41:29",
+                "duration": 10860
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.625,
+        "objective_ratio_first": 0.8,
+        "payload_avg_ratio_first": 0.9714285714285715,
+        "constraint_ratio_first": 1.0
+    }
+}

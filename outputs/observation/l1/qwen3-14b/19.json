@@ -1,0 +1,132 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-14b",
+    "data_num": "19",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "近日点附近彗核冰暴露区光谱特征研究",
+            "彗发气体光谱与原位组分对照研究",
+            "彗发气体与尘埃通量耦合变化研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2015-08-09 15:03:35",
+                "end_time": "2015-08-10 08:50:15",
+                "duration": 64000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2015-08-10 06:37:03",
+                "end_time": "2015-08-10 21:03:43",
+                "duration": 520000
+            },
+            {
+                "name": "OSIRIS广角相机",
+                "start_time": "2015-08-10 06:39:44",
+                "end_time": "2015-08-10 17:29:44",
+                "duration": 195000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2015-08-10 19:40:56",
+                "end_time": "2015-08-11 20:57:36",
+                "duration": 91000
+            },
+            {
+                "name": "RPC-MAG磁强计",
+                "start_time": "2015-08-10 19:57:17",
+                "end_time": "2015-08-11 02:37:17",
+                "duration": 9000
+            },
+            {
+                "name": "COSIMA尘埃质谱仪",
+                "start_time": "2015-08-10 20:00:02",
+                "end_time": "2015-08-10 20:16:42",
+                "duration": 2000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2015-08-11 19:23:02",
+                "end_time": "2015-08-12 13:59:42",
+                "duration": 72000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2015-08-12 18:38:52",
+                "end_time": "2015-08-13 13:15:32",
+                "duration": 1000
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2015-08-13 12:33:09",
+                "end_time": "2015-08-14 08:16:29",
+                "duration": 71000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2015-08-14 07:02:37",
+                "end_time": "2015-08-15 01:22:37",
+                "duration": 30000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2015-08-14 07:24:10",
+                "end_time": "2015-08-15 04:30:50",
+                "duration": 900
+            },
+            {
+                "name": "GIADA尘埃撞击分析与收集仪",
+                "start_time": "2015-08-15 22:23:18",
+                "end_time": "2015-08-16 00:03:18",
+                "duration": 1000
+            },
+            {
+                "name": "MIRO微波光谱仪",
+                "start_time": "2015-08-16 11:59:22",
+                "end_time": "2015-08-16 20:36:02",
+                "duration": 31000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2015-08-16 12:33:11",
+                "end_time": "2015-08-16 14:46:31",
+                "duration": 1000
+            },
+            {
+                "name": "OSIRIS窄角相机",
+                "start_time": "2015-08-16 12:33:11",
+                "end_time": "2015-08-16 14:46:31",
+                "duration": 8000
+            },
+            {
+                "name": "VIRTIS可见红外热成像光谱仪",
+                "start_time": "2015-08-17 03:52:23",
+                "end_time": "2015-08-17 15:15:43",
+                "duration": 91000
+            },
+            {
+                "name": "ROSINA离子与中性气体分析仪",
+                "start_time": "2015-08-17 18:49:16",
+                "end_time": "2015-08-18 01:12:36",
+                "duration": 22700
+            },
+            {
+                "name": "RPC-ICA离子成分分析仪",
+                "start_time": "2015-08-17 19:09:56",
+                "end_time": "2015-08-18 00:59:56",
+                "duration": 21000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.3333333333333333,
+        "payload_avg_ratio_first": 0.4624485596707819,
+        "weighted_score": 0.2652606310013717
+    }
+}

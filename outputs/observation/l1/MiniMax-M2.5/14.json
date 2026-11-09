@@ -1,0 +1,60 @@
+{
+    "level": "l1",
+    "model_name": "MiniMax-M2.5",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:18:30",
+                "end_time": "2019-10-08 14:55:10",
+                "duration": 85000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:35:01",
+                "end_time": "2019-10-08 19:55:01",
+                "duration": 102000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:49:24",
+                "end_time": "2019-10-09 21:02:44",
+                "duration": 80000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:30:06",
+                "end_time": "2019-10-12 06:10:06",
+                "duration": 114000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 22:52:24",
+                "end_time": "2019-10-12 02:39:04",
+                "duration": 100000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:31:06",
+                "end_time": "2019-10-11 05:54:26",
+                "duration": 23000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.4583333333333333,
+        "weighted_score": 0.611111111111111
+    }
+}

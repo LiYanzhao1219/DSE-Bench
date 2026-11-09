@@ -1,0 +1,167 @@
+{
+    "level": "l2",
+    "model_name": "google/gemini-3.1-pro-preview",
+    "data_num": "13",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努表面温度日变化特征研究",
+            "贝努热惯量空间差异研究",
+            "贝努巨石与周边表面的热响应差异研究",
+            "贝努表面坡度与热辐射特征关联研究",
+            "贝努表面反照率与温度分布关联研究",
+            "贝努矿物光谱与热辐射光谱对照研究",
+            "贝努元素丰度与地质单元对应关系研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-10 08:09:49",
+                "end_time": "2019-05-11 09:43:09",
+                "duration": 92000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-10 08:16:49",
+                "end_time": "2019-05-11 05:40:09",
+                "duration": 77000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-11 05:40:09",
+                "end_time": "2019-05-11 20:41:49",
+                "duration": 54100
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-11 09:43:09",
+                "end_time": "2019-05-11 21:56:29",
+                "duration": 44000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-11 20:42:09",
+                "end_time": "2019-05-12 08:22:09",
+                "duration": 42000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-12 08:34:52",
+                "end_time": "2019-05-12 19:24:52",
+                "duration": 39000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-13 04:09:01",
+                "end_time": "2019-05-14 02:55:41",
+                "duration": 82000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-13 04:09:01",
+                "end_time": "2019-05-13 21:29:01",
+                "duration": 62400
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-13 21:29:01",
+                "end_time": "2019-05-14 13:00:41",
+                "duration": 55900
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-14 03:04:01",
+                "end_time": "2019-05-14 15:34:01",
+                "duration": 45000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-14 13:01:01",
+                "end_time": "2019-05-15 01:14:21",
+                "duration": 44000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-15 01:23:00",
+                "end_time": "2019-05-15 08:19:40",
+                "duration": 25000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-15 14:42:35",
+                "end_time": "2019-05-16 12:05:55",
+                "duration": 77000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-15 14:44:55",
+                "end_time": "2019-05-16 12:24:55",
+                "duration": 78000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-16 12:05:55",
+                "end_time": "2019-05-17 00:54:15",
+                "duration": 46100
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-16 12:27:55",
+                "end_time": "2019-05-17 01:14:35",
+                "duration": 46000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-17 00:54:55",
+                "end_time": "2019-05-17 11:28:15",
+                "duration": 38000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-17 11:35:14",
+                "end_time": "2019-05-17 19:05:14",
+                "duration": 27000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2019-05-12 08:23:01",
+                "end_time": "2019-05-12 08:33:01",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2019-05-13 03:53:58",
+                "end_time": "2019-05-13 04:03:58",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2019-05-15 01:16:37",
+                "end_time": "2019-05-15 01:21:37",
+                "duration": 300
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2019-05-15 14:31:14",
+                "end_time": "2019-05-15 14:41:14",
+                "duration": 600
+            },
+            {
+                "name": "第5次调姿",
+                "start_time": "2019-05-17 11:29:48",
+                "end_time": "2019-05-17 11:34:48",
+                "duration": 300
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "weighted_score": 1.0
+    }
+}

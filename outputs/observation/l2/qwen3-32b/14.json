@@ -1,0 +1,66 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-32b",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 16:11:46",
+                "end_time": "2019-10-08 21:55:06",
+                "duration": 75000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 17:45:08",
+                "end_time": "2019-10-08 10:25:08",
+                "duration": 46200
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 17:45:08",
+                "end_time": "2019-10-08 10:25:08",
+                "duration": 74000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 23:19:46",
+                "end_time": "2019-10-09 22:56:26",
+                "duration": 66400
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 23:29:31",
+                "end_time": "2019-10-12 02:09:31",
+                "duration": 24000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 23:29:31",
+                "end_time": "2019-10-12 06:02:51",
+                "duration": 110000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-11 00:58:28",
+                "end_time": "2019-10-11 14:18:28",
+                "duration": 38800
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.375,
+        "payload_avg_ratio_first": 0.4583333333333333,
+        "weighted_score": 0.27777777777777773
+    }
+}

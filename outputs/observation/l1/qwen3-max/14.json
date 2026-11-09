@@ -1,0 +1,93 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-max",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究",
+            "候选采样区颜色与地质单元划分",
+            "候选采样区含水矿物光谱特征研究",
+            "候选采样区矿物组成与地形关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:15:25",
+                "end_time": "2019-10-08 22:17:05",
+                "duration": 111700
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:18:25",
+                "end_time": "2019-10-08 21:18:25",
+                "duration": 108000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:18:30",
+                "end_time": "2019-10-08 15:00:10",
+                "duration": 85300
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:30:25",
+                "end_time": "2019-10-09 23:48:45",
+                "duration": 91100
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-09 22:14:13",
+                "end_time": "2019-10-10 15:27:33",
+                "duration": 62000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:53:34",
+                "end_time": "2019-10-12 04:03:34",
+                "duration": 105000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 23:00:48",
+                "end_time": "2019-10-11 23:44:08",
+                "duration": 89000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:26:37",
+                "end_time": "2019-10-11 15:49:57",
+                "duration": 59000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-12 01:00:10",
+                "end_time": "2019-10-13 02:00:10",
+                "duration": 90000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-12 02:07:59",
+                "end_time": "2019-10-12 08:47:59",
+                "duration": 24000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-13 01:58:38",
+                "end_time": "2019-10-13 11:58:38",
+                "duration": 36000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.8425925925925926,
+        "weighted_score": 0.8641975308641975
+    }
+}

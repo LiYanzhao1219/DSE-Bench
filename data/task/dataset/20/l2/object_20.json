@@ -1,0 +1,110 @@
+[
+  {
+      "name": "彗尾方向太阳风离子能谱与成分研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 3600
+          }
+      ]
+  },
+  {
+      "name": "彗尾方向电子能谱变化研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-IES离子与电子能谱仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "彗发电子密度与温度变化研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-LAP朗缪尔探针",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "RPC-IES离子与电子能谱仪",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "太阳风相互作用区磁场扰动研究",
+      "loadData": [
+          {
+              "pay_load": "RPC-MAG磁强计",
+              "require_time/min": 3300
+          },
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 2700
+          }
+      ]
+  },
+  {
+      "name": "彗发离子成分与中性气体来源关联研究",
+      "loadData": [
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 3600
+          },
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 3000
+          }
+      ]
+  },
+  {
+      "name": "彗核中性气体产率与遥感光谱对照研究",
+      "loadData": [
+          {
+              "pay_load": "MIRO微波光谱仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "VIRTIS可见红外热成像光谱仪",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "彗发活动强度与等离子体环境关联研究",
+      "loadData": [
+          {
+              "pay_load": "OSIRIS广角相机",
+              "require_time/min": 1800
+          },
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 2700
+          },
+          {
+              "pay_load": "RPC-LAP朗缪尔探针",
+              "require_time/min": 2100
+          }
+      ]
+  },
+  {
+      "name": "彗发气尘环境与离子环境关联研究",
+      "loadData": [
+          {
+              "pay_load": "GIADA尘埃撞击分析与收集仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "ROSINA离子与中性气体分析仪",
+              "require_time/min": 2400
+          },
+          {
+              "pay_load": "RPC-ICA离子成分分析仪",
+              "require_time/min": 2400
+          }
+      ]
+  }
+]

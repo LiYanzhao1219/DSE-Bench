@@ -1,0 +1,48 @@
+{
+    "level": "l1",
+    "model_name": "glm-5",
+    "data_num": "17",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "龙宫表面热惯量空间分布研究",
+            "龙宫巨石与周边表面的热响应差异研究",
+            "龙宫表面反射颜色与温度分布关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-09 09:19:46",
+                "end_time": "2019-08-10 16:59:46",
+                "duration": 114000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-10 08:41:33",
+                "end_time": "2019-08-11 08:43:13",
+                "duration": 86500
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2019-08-12 15:06:12",
+                "end_time": "2019-08-13 17:12:52",
+                "duration": 94000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2019-08-12 15:26:14",
+                "end_time": "2019-08-14 05:29:34",
+                "duration": 137000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.3326719576719577,
+        "weighted_score": 0.5870811287477954
+    }
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "主带彗星表面物质的形成机制研究",
+    "loadData": [
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 600
+      },
+      {
+        "pay_load": "多光谱相机",
+        "require_time/min": 700
+      },
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 800
+      },
+      {
+        "pay_load": "喷发物分析仪",
+        "require_time/min": 600
+      }
+    ]
+  },
+  {
+    "name": "主带彗星水特征及其成因分析",
+    "loadData": [
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 600
+      },
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 500
+      },
+      {
+        "pay_load": "喷发物分析仪",
+        "require_time/min": 400
+      }
+    ]
+  },
+  {
+    "name": "主带彗星有机物特征及其成因研究",
+    "loadData": [
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 1000
+      },
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 500
+      },
+      {
+        "pay_load":"带电粒子与中性粒子分析仪",
+        "require_time/min": 400
+      }
+    ]
+  },
+  {
+    "name": "主带彗星含水矿物研究",
+    "loadData": [
+      {
+        "pay_load": "热辐射光谱仪",
+        "require_time/min": 200
+      },
+      {
+        "pay_load": "多光谱相机",
+        "require_time/min": 600
+      },
+      {
+        "pay_load": "可见红外成像光谱仪",
+        "require_time/min": 600
+      }
+    ]
+  },
+  {
+    "name": "主带彗星挥发分特征及其成因分析",
+    "loadData": [
+      {
+        "pay_load": "喷发物分析仪",
+        "require_time/min": 600
+      }
+    ]
+  }
+]

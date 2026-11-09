@@ -1,0 +1,67 @@
+{
+    "level": "l1",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究",
+            "候选采样区表面温度及热惯量研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:15:25",
+                "end_time": "2019-10-08 22:22:05",
+                "duration": 186700
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-08 13:51:18",
+                "end_time": "2019-10-09 13:27:58",
+                "duration": 124000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:36:28",
+                "end_time": "2019-10-09 20:49:48",
+                "duration": 12000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:38:38",
+                "end_time": "2019-10-12 03:31:58",
+                "duration": 251000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 22:52:24",
+                "end_time": "2019-10-12 02:55:44",
+                "duration": 101000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 22:52:24",
+                "end_time": "2019-10-12 02:55:44",
+                "duration": 43000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-12 02:17:40",
+                "end_time": "2019-10-12 23:41:00",
+                "duration": 77000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.5,
+        "payload_avg_ratio_first": 0.5,
+        "weighted_score": 0.3333333333333333
+    }
+}

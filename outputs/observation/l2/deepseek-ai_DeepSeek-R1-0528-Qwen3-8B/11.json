@@ -1,0 +1,103 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "data_num": "11",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小行星自转参数测定",
+            "表面巨石与撞击坑形貌研究",
+            "表面温度分布与热惯量研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-01 00:00:00",
+                "end_time": "2027-01-01 20:00:00",
+                "duration": 72000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-01 00:40:18",
+                "end_time": "2027-01-01 10:40:18",
+                "duration": 13000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-01 13:46:14",
+                "end_time": "2027-01-02 00:52:54",
+                "duration": 41000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2027-01-01 20:00:00",
+                "end_time": "2027-01-02 11:00:00",
+                "duration": 20600
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2027-01-01 20:57:17",
+                "end_time": "2027-01-02 06:57:17",
+                "duration": 28000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2027-01-02 16:28:53",
+                "end_time": "2027-01-02 20:38:53",
+                "duration": 5000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2027-01-03 09:00:00",
+                "end_time": "2027-01-04 05:00:00",
+                "duration": 54000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2027-01-03 12:28:44",
+                "end_time": "2027-01-03 22:28:44",
+                "duration": 1000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2027-01-03 15:17:51",
+                "end_time": "2027-01-04 02:24:31",
+                "duration": 42000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2027-01-04 05:00:00",
+                "end_time": "2027-01-04 20:00:00",
+                "duration": 23000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2027-01-04 07:44:50",
+                "end_time": "2027-01-04 17:44:50",
+                "duration": 19000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2027-01-02 11:00:00",
+                "end_time": "2027-01-02 11:10:00",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2027-01-03 08:00:00",
+                "end_time": "2027-01-03 08:10:00",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.6828703703703702,
+        "weighted_score": 0.37048059964726626
+    }
+}

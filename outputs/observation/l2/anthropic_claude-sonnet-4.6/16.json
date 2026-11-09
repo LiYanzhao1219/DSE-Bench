@@ -1,0 +1,157 @@
+{
+    "level": "l2",
+    "model_name": "anthropic/claude-sonnet-4.6",
+    "data_num": "16",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "龙宫不同颜色单元的矿物光谱差异研究",
+            "龙宫巨石与周边表面的光谱差异研究",
+            "龙宫颜色单元的热响应差异研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-10-27 18:31:05",
+                "end_time": "2018-10-28 08:07:45",
+                "duration": 49000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-10-27 21:53:01",
+                "end_time": "2018-10-28 17:53:01",
+                "duration": 72000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-10-28 09:23:05",
+                "end_time": "2018-10-28 23:49:45",
+                "duration": 52000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2018-10-28 19:31:08",
+                "end_time": "2018-10-28 22:01:08",
+                "duration": 9000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2018-10-29 09:23:07",
+                "end_time": "2018-10-29 11:36:27",
+                "duration": 8000
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2018-10-29 09:43:32",
+                "end_time": "2018-10-29 10:33:32",
+                "duration": 3000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-10-30 00:46:40",
+                "end_time": "2018-10-30 17:43:20",
+                "duration": 61000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-10-30 01:03:01",
+                "end_time": "2018-10-30 16:36:21",
+                "duration": 56000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-10-30 17:32:45",
+                "end_time": "2018-10-31 09:39:25",
+                "duration": 58000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2018-10-31 02:59:23",
+                "end_time": "2018-10-31 05:12:43",
+                "duration": 8000
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2018-10-31 11:45:51",
+                "end_time": "2018-10-31 12:35:51",
+                "duration": 3000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2018-10-31 13:47:29",
+                "end_time": "2018-10-31 15:44:09",
+                "duration": 7000
+            },
+            {
+                "name": "ONC-T多波段望远相机",
+                "start_time": "2018-11-01 02:34:23",
+                "end_time": "2018-11-01 22:01:03",
+                "duration": 70000
+            },
+            {
+                "name": "NIRS3近红外光谱仪",
+                "start_time": "2018-11-01 03:01:10",
+                "end_time": "2018-11-01 16:04:30",
+                "duration": 47000
+            },
+            {
+                "name": "TIR热红外成像仪",
+                "start_time": "2018-11-01 18:22:50",
+                "end_time": "2018-11-02 05:29:30",
+                "duration": 40000
+            },
+            {
+                "name": "LIDAR激光测距仪",
+                "start_time": "2018-11-01 22:38:21",
+                "end_time": "2018-11-02 01:08:21",
+                "duration": 9000
+            },
+            {
+                "name": "ONC-W2广角导航相机",
+                "start_time": "2018-11-02 11:25:23",
+                "end_time": "2018-11-02 12:15:23",
+                "duration": 3000
+            },
+            {
+                "name": "ONC-W1广角导航相机",
+                "start_time": "2018-11-02 11:34:10",
+                "end_time": "2018-11-02 13:30:50",
+                "duration": 7000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2018-10-29 06:51:39",
+                "end_time": "2018-10-29 07:01:39",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2018-10-31 09:47:07",
+                "end_time": "2018-10-31 09:57:07",
+                "duration": 600
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2018-11-01 02:29:21",
+                "end_time": "2018-11-01 02:39:21",
+                "duration": 600
+            },
+            {
+                "name": "第5次调姿",
+                "start_time": "2018-11-02 10:25:03",
+                "end_time": "2018-11-02 10:35:03",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.42857142857142855,
+        "payload_avg_ratio_first": 0.5506981187536744,
+        "weighted_score": 0.326423182441701
+    }
+}

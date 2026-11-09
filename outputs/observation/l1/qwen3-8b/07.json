@@ -1,0 +1,86 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-8b",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "爱神星物理特性探测",
+            "小行星化学成分分析",
+            "小行星表面空间环境研究",
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-21 04:24:47",
+                "end_time": "2001-05-24 05:16:02",
+                "duration": 239115
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-22 07:47:25",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 256188
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 256188
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-06-18 07:17:35",
+                "duration": 445780
+            },
+            {
+                "name": "磁力计",
+                "start_time": "2001-06-14 21:53:34",
+                "end_time": "2001-06-18 07:17:35",
+                "duration": 344801
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-06-14 21:53:34",
+                "end_time": "2001-06-18 07:17:35",
+                "duration": 344801
+            },
+            {
+                "name": "近红外分光计",
+                "start_time": "2001-05-22 07:47:25",
+                "end_time": "2001-06-18 19:32:39",
+                "duration": 445780
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2001-05-24 05:16:02",
+                "end_time": "2001-05-24 05:16:12",
+                "duration": 10
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2001-05-24 18:57:13",
+                "end_time": "2001-05-24 18:57:23",
+                "duration": 10
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2001-06-18 07:17:35",
+                "end_time": "2001-06-18 07:17:45",
+                "duration": 10
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.21428571428571427,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.9717100694444444,
+        "constraint_ratio_first": 0.0
+    }
+}

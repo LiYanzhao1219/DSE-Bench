@@ -1,0 +1,122 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-v4-pro",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "爱神星物理特性探测",
+            "小行星化学成分分析",
+            "小行星表面空间环境研究",
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 05:16:02",
+                "duration": 100027
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 05:16:02",
+                "duration": 100027
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-22 21:28:55",
+                "end_time": "2001-05-24 05:16:02",
+                "duration": 100027
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-05-24 05:16:02",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 49271
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-05-24 05:16:02",
+                "end_time": "2001-05-24 18:57:13",
+                "duration": 49271
+            },
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-05-24 18:57:13",
+                "end_time": "2001-05-26 16:26:24",
+                "duration": 160151
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-05-26 16:36:24",
+                "end_time": "2001-05-28 18:36:24",
+                "duration": 180000
+            },
+            {
+                "name": "磁力计",
+                "start_time": "2001-05-26 16:36:24",
+                "end_time": "2001-05-28 18:36:24",
+                "duration": 180000
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-05-28 18:46:24",
+                "end_time": "2001-05-30 20:46:24",
+                "duration": 180000
+            },
+            {
+                "name": "多光谱成像仪",
+                "start_time": "2001-06-17 02:50:48",
+                "end_time": "2001-06-17 10:34:30",
+                "duration": 27822
+            },
+            {
+                "name": "近红外光谱仪",
+                "start_time": "2001-06-17 10:34:30",
+                "end_time": "2001-06-18 05:06:12",
+                "duration": 66702
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-06-17 10:34:30",
+                "end_time": "2001-06-18 05:06:12",
+                "duration": 66702
+            },
+            {
+                "name": "X射线/伽马射线光谱仪",
+                "start_time": "2001-06-18 05:06:12",
+                "end_time": "2001-06-18 15:06:12",
+                "duration": 36000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-26 16:36:24",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2001-05-28 18:36:24",
+                "end_time": "2001-05-28 18:46:24",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2001-05-30 20:46:24",
+                "end_time": "2001-05-30 20:56:24",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.2692307692307692,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 0.0
+    }
+}

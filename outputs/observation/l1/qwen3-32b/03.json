@@ -1,0 +1,74 @@
+{
+    "level": "l1",
+    "model_name": "qwen3-32b",
+    "data_num": "03",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体内部结构研究",
+            "主带彗星微磁层研究",
+            "飞行路径上太阳风动力学演化过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-08-04 13:26:54",
+                "end_time": "2026-08-07 15:59:59",
+                "duration": 259980
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-08-01 16:03:21",
+                "end_time": "2026-08-04 13:26:54",
+                "duration": 259980
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-08-01 00:00:00",
+                "end_time": "2026-08-05 10:40:17",
+                "duration": 352817
+            },
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-08-01 00:00:00",
+                "end_time": "2026-08-03 21:23:36",
+                "duration": 197616
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-06 02:43:33",
+                "end_time": "2026-08-27 19:40:29",
+                "duration": 1520276
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-03 21:23:36",
+                "end_time": "2026-08-06 02:43:33",
+                "duration": 152397
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-08-09 00:06:43",
+                "end_time": "2026-08-26 00:31:22",
+                "duration": 1492499
+            },
+            {
+                "name": "磁强计",
+                "start_time": "2026-08-10 13:23:36",
+                "end_time": "2026-08-25 01:20:28",
+                "duration": 1247812
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.8125,
+        "objective_ratio_first": 0.5454545454545454,
+        "payload_avg_ratio_first": 0.7823522222222222,
+        "constraint_ratio_first": 0.0
+    }
+}

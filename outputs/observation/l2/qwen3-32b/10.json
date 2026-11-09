@@ -1,0 +1,54 @@
+{
+    "level": "l2",
+    "model_name": "qwen3-32b",
+    "data_num": "10",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2031-07-03 15:13:02",
+                "end_time": "2031-07-06 19:43:02",
+                "duration": 288000
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-07 16:04:07",
+                "duration": 288000
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2031-07-04 11:34:07",
+                "end_time": "2031-07-07 16:04:07",
+                "duration": 288000
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2031-07-07 16:04:07",
+                "end_time": "2031-07-15 19:34:07",
+                "duration": 694800
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2031-07-07 16:04:07",
+                "end_time": "2031-07-10 19:04:07",
+                "duration": 252000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.992,
+        "constraint_ratio_first": 0.0
+    }
+}

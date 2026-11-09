@@ -1,0 +1,91 @@
+{
+    "level": "l2",
+    "model_name": "kimi-k2.5",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-13 21:04:37",
+                "duration": "252000"
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-13 21:04:37",
+                "duration": "252000"
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-13 21:04:37",
+                "duration": "252000"
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-13 21:14:37",
+                "end_time": "2018-06-19 21:14:37",
+                "duration": "518400"
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-13 21:14:37",
+                "end_time": "2018-06-19 21:14:37",
+                "duration": "518400"
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-06-13 21:14:37",
+                "end_time": "2018-06-18 13:14:37",
+                "duration": "403200"
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-06-19 21:24:37",
+                "end_time": "2018-06-26 03:24:37",
+                "duration": "540000"
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-19 21:24:37",
+                "end_time": "2018-06-25 15:24:37",
+                "duration": "504000"
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-06-19 21:24:37",
+                "end_time": "2018-06-24 21:24:37",
+                "duration": "432000"
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-06-26 03:34:37",
+                "end_time": "2018-07-08 00:07:07",
+                "duration": "1036800"
+            },
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-26 03:34:37",
+                "end_time": "2018-07-08 00:07:07",
+                "duration": "1036800"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.36363636363636365,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 0.0
+    }
+}

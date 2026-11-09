@@ -1,0 +1,162 @@
+{
+    "level": "l2",
+    "model_name": "glm-5",
+    "data_num": "13",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "贝努热惯量空间差异研究",
+            "贝努表面坡度与热辐射特征关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-10 09:56:20",
+                "end_time": "2019-05-11 07:53:00",
+                "duration": 79000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-10 13:44:55",
+                "end_time": "2019-05-11 04:11:35",
+                "duration": 52000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-11 12:01:16",
+                "end_time": "2019-05-11 15:04:36",
+                "duration": 11000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-11 13:22:30",
+                "end_time": "2019-05-11 13:39:10",
+                "duration": 1000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-11 20:42:09",
+                "end_time": "2019-05-12 08:22:09",
+                "duration": 42000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-12 10:32:02",
+                "end_time": "2019-05-12 11:22:02",
+                "duration": 3000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-13 05:09:23",
+                "end_time": "2019-05-14 00:52:43",
+                "duration": 71000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-13 07:30:01",
+                "end_time": "2019-05-13 19:10:01",
+                "duration": 42000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-13 21:29:01",
+                "end_time": "2019-05-14 13:02:21",
+                "duration": 56000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-14 05:03:33",
+                "end_time": "2019-05-14 05:20:13",
+                "duration": 1000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-14 16:28:11",
+                "end_time": "2019-05-14 18:58:11",
+                "duration": 9000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-15 01:25:48",
+                "end_time": "2019-05-15 01:59:08",
+                "duration": 2000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-05-15 17:03:15",
+                "end_time": "2019-05-16 11:39:55",
+                "duration": 67000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-05-15 18:50:03",
+                "end_time": "2019-05-16 09:00:03",
+                "duration": 51000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-05-16 12:05:55",
+                "end_time": "2019-05-17 00:52:35",
+                "duration": 46000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-05-16 17:18:03",
+                "end_time": "2019-05-16 19:48:03",
+                "duration": 9000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-05-17 01:09:03",
+                "end_time": "2019-05-17 01:25:43",
+                "duration": 1000
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-05-17 16:29:55",
+                "end_time": "2019-05-17 17:03:15",
+                "duration": 2000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第2次调姿",
+                "start_time": "2019-05-13 04:02:05",
+                "end_time": "2019-05-13 04:12:05",
+                "duration": 600
+            },
+            {
+                "name": "第3次调姿",
+                "start_time": "2019-05-15 01:16:37",
+                "end_time": "2019-05-15 01:26:37",
+                "duration": 600
+            },
+            {
+                "name": "第4次调姿",
+                "start_time": "2019-05-15 14:40:22",
+                "end_time": "2019-05-15 14:50:22",
+                "duration": 600
+            },
+            {
+                "name": "第1次调姿",
+                "start_time": "2019-05-16 17:18:03",
+                "end_time": "2019-05-16 17:28:03",
+                "duration": 600
+            },
+            {
+                "name": "第5次调姿",
+                "start_time": "2019-05-17 11:31:32",
+                "end_time": "2019-05-17 11:41:32",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 0.0,
+        "objective_ratio_first": 0.2857142857142857,
+        "payload_avg_ratio_first": 0.4725639329805997,
+        "weighted_score": 0.25275940623162846
+    }
+}

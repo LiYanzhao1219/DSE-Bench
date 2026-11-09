@@ -1,0 +1,55 @@
+{
+    "level": "l1",
+    "model_name": "kimi-k2.5",
+    "data_num": "09",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "表面物质分布研究",
+            "有机-水蚀变过程探究",
+            "形成过程反演研究",
+            "碰撞历史与动力学过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "MASCOT",
+                "start_time": "2018-06-11 02:44:37",
+                "end_time": "2018-06-18 23:44:37",
+                "duration": "522000"
+            },
+            {
+                "name": "近红外相机",
+                "start_time": "2018-08-04 13:14:09",
+                "end_time": "2018-08-11 13:14:09",
+                "duration": "504000"
+            },
+            {
+                "name": "热红外相机",
+                "start_time": "2018-08-05 13:33:48",
+                "end_time": "2018-08-11 08:33:48",
+                "duration": "396000"
+            },
+            {
+                "name": "光学导航相机",
+                "start_time": "2018-08-07 06:13:02",
+                "end_time": "2018-08-14 06:13:02",
+                "duration": "540000"
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2018-08-07 06:13:02",
+                "end_time": "2018-08-12 06:13:02",
+                "duration": "432000"
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.0,
+        "objective_ratio_first": 1.0,
+        "payload_avg_ratio_first": 1.0,
+        "constraint_ratio_first": 1.0
+    }
+}

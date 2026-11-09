@@ -1,0 +1,87 @@
+{
+    "level": "l1",
+    "model_name": "openai/gpt-5.4",
+    "data_num": "14",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "候选采样区高分辨率地形测绘",
+            "候选采样区巨石尺度与分布研究",
+            "候选采样区坡度与地形起伏研究",
+            "候选采样区颜色与地质单元划分",
+            "候选采样区含水矿物光谱特征研究",
+            "候选采样区矿物组成与地形关联研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-07 15:09:42",
+                "end_time": "2019-10-08 23:39:42",
+                "duration": 117000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-07 15:15:25",
+                "end_time": "2019-10-08 22:17:05",
+                "duration": 111700
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-07 15:43:07",
+                "end_time": "2019-10-08 12:49:47",
+                "duration": 76000
+            },
+            {
+                "name": "OTES热辐射光谱仪",
+                "start_time": "2019-10-08 13:57:50",
+                "end_time": "2019-10-09 02:27:50",
+                "duration": 45000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-08 22:30:25",
+                "end_time": "2019-10-09 23:48:45",
+                "duration": 91100
+            },
+            {
+                "name": "REXIS X射线成像光谱仪",
+                "start_time": "2019-10-09 22:19:07",
+                "end_time": "2019-10-10 12:45:47",
+                "duration": 52000
+            },
+            {
+                "name": "PolyCam高分辨率相机",
+                "start_time": "2019-10-10 22:43:57",
+                "end_time": "2019-10-12 03:53:57",
+                "duration": 105000
+            },
+            {
+                "name": "OLA激光测高仪",
+                "start_time": "2019-10-10 23:08:55",
+                "end_time": "2019-10-11 23:52:15",
+                "duration": 89000
+            },
+            {
+                "name": "MapCam多光谱相机",
+                "start_time": "2019-10-10 23:21:51",
+                "end_time": "2019-10-11 18:15:11",
+                "duration": 68000
+            },
+            {
+                "name": "OVIRS可见红外光谱仪",
+                "start_time": "2019-10-12 01:20:52",
+                "end_time": "2019-10-12 23:50:52",
+                "duration": 81000
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "constraint_ratio_first": 1.0,
+        "objective_ratio_first": 0.75,
+        "payload_avg_ratio_first": 0.79320987654321,
+        "weighted_score": 0.8477366255144033
+    }
+}

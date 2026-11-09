@@ -1,0 +1,78 @@
+{
+    "level": "l1",
+    "model_name": "qwen-max",
+    "data_num": "05",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体轨道参数测定",
+            "小天体自转参数测定",
+            "小天体形状大小参数测定",
+            "小天体表面精细形貌研究",
+            "小天体表面物质成分研究",
+            "小天体表面物质的热物理性质研究",
+            "小天体内部结构研究",
+            "小行星轨道长期演化与雅科夫斯基效应影响机理研究",
+            "分析小行星约普效应"
+        ],
+        "observation_plan": [
+            {
+                "name": "窄视场导航敏感器",
+                "start_time": "2026-10-01 00:00:00",
+                "end_time": "2026-10-04 23:24:45",
+                "duration": 407685
+            },
+            {
+                "name": "中视场彩色相机",
+                "start_time": "2026-10-01 22:04:35",
+                "end_time": "2026-10-05 21:29:17",
+                "duration": 416262
+            },
+            {
+                "name": "多光谱相机",
+                "start_time": "2026-10-05 21:29:17",
+                "end_time": "2026-10-10 03:59:59",
+                "duration": 425812
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-10-08 00:44:42",
+                "end_time": "2026-10-08 00:44:42",
+                "duration": 0
+            },
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-10-04 23:24:45",
+                "end_time": "2026-10-08 00:44:42",
+                "duration": 345577
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-10-12 00:09:11",
+                "end_time": "2026-10-12 00:09:11",
+                "duration": 0
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-10-16 06:40:12",
+                "end_time": "2026-10-16 06:40:12",
+                "duration": 0
+            },
+            {
+                "name": "激光一体化导航敏感器",
+                "start_time": "2026-10-01 00:00:00",
+                "end_time": "2026-10-07 02:40:12",
+                "duration": 602412
+            }
+        ],
+        "adjustment_plan": []
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.4444444444444444,
+        "payload_avg_ratio_first": 0.6179644097222222,
+        "constraint_ratio_first": 0.0
+    }
+}

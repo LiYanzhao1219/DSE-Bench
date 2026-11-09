@@ -1,0 +1,69 @@
+{
+    "level": "l2",
+    "model_name": "deepseek-v4-pro",
+    "data_num": "02",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小天体表面物质成分研究",
+            "小天体内部结构研究",
+            "太阳风和小天体表面物质的相互作用研究",
+            "磁化或非磁化小尺度星体对太阳风扰动的研究",
+            "飞行路径上太阳风动力学演化过程研究"
+        ],
+        "observation_plan": [
+            {
+                "name": "热辐射光谱仪",
+                "start_time": "2026-08-01 21:41:55",
+                "end_time": "2026-08-02 14:21:53",
+                "duration": 59998
+            },
+            {
+                "name": "可见红外成像光谱仪",
+                "start_time": "2026-08-02 14:21:58",
+                "end_time": "2026-08-03 17:01:58",
+                "duration": 96000
+            },
+            {
+                "name": "探测雷达",
+                "start_time": "2026-08-03 17:21:58",
+                "end_time": "2026-08-04 09:21:58",
+                "duration": 57600
+            },
+            {
+                "name": "带电粒子与中性粒子分析仪",
+                "start_time": "2026-08-04 11:20:55",
+                "end_time": "2026-08-05 04:00:55",
+                "duration": 60000
+            },
+            {
+                "name": "磁强计",
+                "start_time": "2026-08-04 23:41:55",
+                "end_time": "2026-08-05 16:21:55",
+                "duration": 60000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第1次调姿",
+                "start_time": "2026-08-03 17:01:58",
+                "end_time": "2026-08-03 17:11:58",
+                "duration": 600
+            },
+            {
+                "name": "第2次调姿",
+                "start_time": "2026-08-04 09:21:58",
+                "end_time": "2026-08-04 09:31:58",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 1.0,
+        "objective_ratio_first": 0.3333333333333333,
+        "payload_avg_ratio_first": 0.5511074074074074,
+        "constraint_ratio_first": 0.0
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "level": "l2",
+    "model_name": "qwen3.5-plus",
+    "data_num": "07",
+    "generated": true,
+    "reason": "ok",
+    "plan": {
+        "achieved_objectives": [
+            "小行星活动状态监测"
+        ],
+        "observation_plan": [
+            {
+                "name": "磁力计",
+                "start_time": "2001-05-26 16:26:24",
+                "end_time": "2001-05-28 18:26:24",
+                "duration": 180000
+            },
+            {
+                "name": "无线电科学和重力实验装置",
+                "start_time": "2001-05-28 18:36:24",
+                "end_time": "2001-05-30 20:36:24",
+                "duration": 180000
+            },
+            {
+                "name": "激光测距仪",
+                "start_time": "2001-06-14 21:53:34",
+                "end_time": "2001-06-16 23:53:34",
+                "duration": 180000
+            }
+        ],
+        "adjustment_plan": [
+            {
+                "name": "第 1 次调姿",
+                "start_time": "2001-05-28 18:26:24",
+                "end_time": "2001-05-28 18:36:24",
+                "duration": 600
+            },
+            {
+                "name": "第 2 次调姿",
+                "start_time": "2001-06-14 21:43:34",
+                "end_time": "2001-06-14 21:53:34",
+                "duration": 600
+            }
+        ]
+    },
+    "metrics": {
+        "gen_success": 1.0,
+        "accuracy_first": 0.5,
+        "objective_ratio_first": 0.25,
+        "payload_avg_ratio_first": 0.5,
+        "constraint_ratio_first": 0.0
+    }
+}

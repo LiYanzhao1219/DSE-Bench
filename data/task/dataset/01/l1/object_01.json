@@ -1,0 +1,97 @@
+[
+  {
+      "name": "小天体轨道参数测定",
+      "loadData": [
+          {
+              "pay_load": "窄视场导航敏感器",
+              "require_time/min": 7200
+          }
+      ]
+  },
+  {
+      "name": "小天体自转参数测定",
+      "loadData": [
+          {
+              "pay_load": "中视场彩色相机",
+              "require_time/min": 2000
+          },
+          {
+              "pay_load": "窄视场导航敏感器",
+              "require_time/min": 1500
+          }
+      ]
+  },
+  {
+      "name": "小天体形状大小参数测定",
+      "loadData": [
+          {
+              "pay_load": "中视场彩色相机",
+              "require_time/min": 1500
+          },
+          {
+              "pay_load": "窄视场导航敏感器",
+              "require_time/min": 1600
+          }
+      ]
+  },
+  {
+      "name": "小天体表面精细形貌研究",
+      "loadData": [
+          {
+              "pay_load": "多光谱相机",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "中视场彩色相机",
+              "require_time/min": 1200
+          },
+          {
+              "pay_load": "激光一体化导航敏感器",
+              "require_time/min": 3000
+          },
+          {
+              "pay_load": "窄视场导航敏感器",
+              "require_time/min": 2400
+          }
+      ]
+  },
+  {
+      "name": "小天体表面物质成分研究",
+      "loadData": [
+          {
+              "pay_load": "可见红外成像光谱仪",
+              "require_time/min": 1500
+          },
+          {
+              "pay_load": "热辐射光谱仪",
+              "require_time/min": 600
+          },
+          {
+              "pay_load": "多光谱相机",
+              "require_time/min": 600
+          }
+      ]
+  },
+  {
+      "name": "小天体表面物质的热物理性质研究",
+      "loadData": [
+          {
+              "pay_load": "可见红外成像光谱仪",
+              "require_time/min": 2600
+          },
+          {
+              "pay_load": "热辐射光谱仪",
+              "require_time/min": 1800
+          }
+      ]
+  },
+  {
+      "name": "小天体内部结构研究",
+      "loadData": [
+          {
+              "pay_load": "探测雷达",
+              "require_time/min": 1000
+          }
+      ]
+  }
+]
