@@ -26,7 +26,7 @@ RESUME = True
 TASK = 'concept_words'
 IS_ABBREVIATION = True
 DATA_FILES = [
-    (ROOT / 'data/knowledge/concept/words.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/technical_abbreviations.xlsx', True),
 ]
 SYSTEM_PROMPT = '你是一个航天领域专家，下面来进行航天领域的缩略词解释。我会给你缩略词的细分领域，请你给出供该缩略词的英文全称和中文全称。例如，测控领域的VLBI，你应该解释为：“Very Long Baseline Interferometry 甚长基线干涉测量”严格要求：你的回答只能包含缩略词的解释本身，绝不能包含任何打招呼的话语、前缀（如‘解释：’、‘这个词的意思是’）或多余的标点符号。'
 USER_PROMPT = '请解释{field}相关缩略词：{noun}'

@@ -8,9 +8,6 @@ import re
 import time
 from collections import Counter
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Union
-
-from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parent
 
@@ -23,11 +20,17 @@ MAX_ATTEMPTS = 3
 RETRY_DELAYS = (2, 4)
 EXTRA_BODY = {}
 STREAMING = False
-MAX_TOKENS = None
+MAX_TOKENS = 5000
 RUN_ID = 'run01'
-DATA_PATH = ROOT / 'data/nlp/ner.json'
-MATCH_MODE = 'exact'
-OUTPUT_MODE = 'structured'
+TASK = 'program'
+MULTI_CHOICE = True
+INSTRUCTION = '请阅读下面的多项选择题，直接给出所有正确选项字母；如果答案是 A、B、C，请输出 ABC。'
+DATA_PATHS = [
+    ROOT / 'data/knowledge/procedural_knowledge/tracking_and_control_procedures.json',
+    ROOT / 'data/knowledge/procedural_knowledge/launch_procedures.json',
+    ROOT / 'data/knowledge/procedural_knowledge/space_systems_development_procedures.json',
+    ROOT / 'data/knowledge/procedural_knowledge/spacecraft_testing_procedures.json',
+]
 
 class InvalidResponse(ValueError):
     pass
@@ -263,233 +266,62 @@ def evaluate_items(groups, invoke, parse, score, primary, keys, task, output_roo
         print_summary(result)
         print(f'汇总文件：{destination / "summary.json"}')
     return result
-NEW_ENTITY_LABEL = "新实体"
-VALID_MATCH_MODES = {"exact", "restricted_containment", "any_containment"}
-OVER_GENERAL_ENTITIES = {"水", "氧", "氢", "氮", "风", "冰", "核", "质量", "形成", "自转", "采样"}
-class EntityMention(BaseModel):
-    text: str = Field(description="原文中连续出现的实体文本，不包含实体类别。")
 
-class NERResult(BaseModel):
-    entities: List[EntityMention] = Field(
-        default_factory=list,
-        description="实体名称列表；同一实体名称即使在原文中出现多次，也只需输出一次。",
-    )
-
-def load_label_studio_data(data_path: Union[str, Path]) -> List[Dict[str, Any]]:
-    data_path = Path(data_path)
-    with data_path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-    if not isinstance(data, list):
-        raise ValueError(f"{data_path} should contain a JSON list.")
-    return data
-
-def extract_reference_labels(data: Sequence[Dict[str, Any]]) -> List[str]:
-    labels = set()
-    for item in data:
-        for ann in item.get("label", []):
-            for label in ann.get("labels", []):
-                if label != NEW_ENTITY_LABEL:
-                    labels.add(label)
-    return sorted(labels)
-
-def extract_gold_mentions(item: Dict[str, Any]) -> List[str]:
-    mentions = []
-    for ann in item.get("label", []):
-        text = ann.get("text", "")
-        if text:
-            mentions.append(text)
-    return mentions
-
-def normalize_entity_text(text: str) -> str:
-    text = str(text).strip()
-    text = re.sub(r"[\u00a0\u3000]+", " ", text)
-    text = re.sub(r"\s+", " ", text)
-    translation = str.maketrans(
-        {
-            "（": "(",
-            "）": ")",
-            "【": "[",
-            "】": "]",
-            "［": "[",
-            "］": "]",
-            "｛": "{",
-            "｝": "}",
-        }
-    )
-    return text.translate(translation)
-
-def set_from_mentions(mentions: Sequence[str]) -> set:
-    return {
-        normalized for normalized in (normalize_entity_text(text) for text in mentions) if normalized
-    }
-
-def is_containment_match(gold_entity: str, pred_entity: str, match_mode: str) -> bool:
-    if gold_entity == pred_entity:
-        return True
-    if gold_entity not in pred_entity and pred_entity not in gold_entity:
-        return False
-    if match_mode == "any_containment":
-        return True
-    if match_mode == "restricted_containment":
-        shorter = gold_entity if len(gold_entity) <= len(pred_entity) else pred_entity
-        return len(shorter) >= 2 and shorter not in OVER_GENERAL_ENTITIES
-    return False
-
-def count_matched_entities(gold_set: set, pred_set: set, match_mode: str) -> int:
-    if match_mode not in VALID_MATCH_MODES:
-        raise ValueError(f"Unsupported match_mode: {match_mode}")
-
-    exact_matched = gold_set & pred_set
-    matched_count = len(exact_matched)
-    if match_mode == "exact":
-        return matched_count
-
-    remaining_gold = sorted(gold_set - exact_matched, key=lambda entity: (-len(entity), entity))
-    remaining_pred = set(pred_set - exact_matched)
-
-    for gold_entity in remaining_gold:
-        candidates = [
-            pred_entity
-            for pred_entity in remaining_pred
-            if is_containment_match(gold_entity, pred_entity, match_mode)
-        ]
-        if not candidates:
-            continue
-        best_pred = min(candidates, key=lambda entity: (abs(len(entity) - len(gold_entity)), len(entity), entity))
-        remaining_pred.remove(best_pred)
-        matched_count += 1
-
-    return matched_count
-
-def score_mentions(
-    gold_mentions: Sequence[str],
-    pred_mentions: Sequence[str],
-    match_mode: str = MATCH_MODE,
-) -> Dict[str, Any]:
-    gold_set = set_from_mentions(gold_mentions)
-    pred_set = set_from_mentions(pred_mentions)
-
-    tp = count_matched_entities(gold_set, pred_set, match_mode)
-    fp = len(pred_set) - tp
-    fn = len(gold_set) - tp
-
-    precision = tp / (tp + fp) if tp + fp else 0.0
-    recall = tp / (tp + fn) if tp + fn else 0.0
-    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
-
-    return {
-        "tp": tp,
-        "fp": fp,
-        "fn": fn,
-        "precision": precision,
-        "recall": recall,
-        "f1": f1,
-    }
-
-def build_prompt(text: str, reference_labels: Sequence[str]) -> str:
-    label_text = "、".join(reference_labels) if reference_labels else "无"
-    return f"""请完成命名实体识别任务。
-
-你可以参考以下实体类别范围，但输出中不要包含类别：{label_text}
-
-硬性要求：
-1. 只抽取输入原文中连续出现的实体文本。
-2. 同一实体名称即使在原文中出现多次，也只需输出一次。
-3. 不要输出标签、解释、推理过程或原文中不存在的文本。
-4. 返回结构必须只包含 entities，每个元素只包含 text。
-
-输入文本：
-{text}
-"""
-
-def build_plain_text_json_prompt(text: str, reference_labels: Sequence[str], retry: bool = False) -> str:
-    label_text = "、".join(reference_labels) if reference_labels else "无"
-    retry_instruction = ""
-    if retry:
-        retry_instruction = "上一次输出不是合法 JSON 对象。请修正格式，只输出 JSON 对象。\n\n"
-    return f"""{retry_instruction}请完成命名实体识别任务。
-
-你可以参考以下实体类别范围，但输出中不要包含类别：{label_text}
-
-只输出一个 JSON 对象，格式如下：
-{{"entities":[{{"text":"实体1"}},{{"text":"实体2"}}]}}
-
-硬性要求：
-1. 只输出 JSON 对象，不要输出 Markdown，不要输出解释，不要输出推理过程。
-2. 只抽取输入原文中连续出现的实体文本。
-3. 同一实体名称即使在原文中出现多次，也只需输出一次。
-4. 不要输出标签或原文中不存在的文本。
-5. 如果没有实体，输出 {{"entities":[]}}。
-
-输入文本：
-{text}
-"""
-
-def coerce_ner_result(raw_result: Any) -> NERResult:
-    if isinstance(raw_result, NERResult):
-        return raw_result
-    if isinstance(raw_result, dict):
-        entities = raw_result.get("entities")
-        if isinstance(entities, list):
-            normalized_entities = []
-            for entity in entities:
-                if isinstance(entity, str):
-                    normalized_entities.append({"text": entity})
-                else:
-                    normalized_entities.append(entity)
-            raw_result = {**raw_result, "entities": normalized_entities}
-        if hasattr(NERResult, "model_validate"):
-            return NERResult.model_validate(raw_result)
-        return NERResult.parse_obj(raw_result)
-    raise TypeError(f"Unsupported LLM result type: {type(raw_result)!r}")
+def load_groups(paths):
+    groups = {}
+    for path in paths:
+        path = Path(path)
+        data = json.loads(path.read_text(encoding='utf-8-sig'))
+        if not isinstance(data, list) or not data:
+            raise ValueError(f'题库必须是非空列表：{path}')
+        for row in data:
+            if not isinstance(row, dict) or not row.get('question') or not row.get('options') or not row.get('answer'):
+                raise ValueError(f'题目缺少 question/options/answer：{path}')
+        groups[path.name] = data
+    return groups
 
 
-def create_chain(labels):
-    from langchain_core.prompts import ChatPromptTemplate
+def create_chain():
     from langchain_core.output_parsers import JsonOutputParser
-    llm = create_llm()
-    prompt = ChatPromptTemplate.from_messages([('system', '你是一个严格的命名实体识别系统。必须按指定结构输出，不要输出解释。'), ('human', '{input}')])
-    if OUTPUT_MODE == 'plain_text_json':
-        return prompt | llm
-    if OUTPUT_MODE == 'structured':
-        try:
-            return prompt | llm.with_structured_output(NERResult, include_raw=True)
-        except NotImplementedError:
-            pass
-    parser = JsonOutputParser(pydantic_object=NERResult)
-    prompt = ChatPromptTemplate.from_messages([('system', '你是一个严格的命名实体识别系统。必须只输出合法 JSON，不要输出解释。'),
-        ('human', '{input}\n\n输出格式说明：\n{format_instructions}')]).partial(format_instructions=parser.get_format_instructions())
-    return prompt | llm.bind(response_format={'type': 'json_object'})
+    from langchain_core.prompts import PromptTemplate
+    from pydantic import BaseModel, Field
+    class ChoiceAnswer(BaseModel):
+        answer: str = Field(description='Correct option letters, such as A or ABC.')
+    parser = JsonOutputParser(pydantic_object=ChoiceAnswer)
+    llm = create_llm().bind(response_format={'type': 'json_object'})
+    prompt = PromptTemplate(template='{instruction}\n问题：{question}\n选项：{options}\n{format_instructions}\n'
+        '硬性规则：只输出 JSON 对象，不要输出解释、推理过程或多余文本。',
+        input_variables=['instruction', 'question', 'options'],
+        partial_variables={'format_instructions': parser.get_format_instructions()})
+    return prompt | llm
 
 
 def parse_answer(raw):
-    value = json_answer(raw)
-    if not isinstance(value, dict) or 'entities' not in value:
-        raise InvalidResponse('缺少 entities 字段')
-    try:
-        return coerce_ner_result(value)
-    except (TypeError, ValueError) as exc:
-        raise InvalidResponse('实体结构不合法') from exc
+    result = json_answer(raw)
+    if not isinstance(result, dict) or not isinstance(result.get('answer'), str) or not result['answer'].strip():
+        raise InvalidResponse('缺少选项答案')
+    text = result['answer'].strip().upper()
+    letters = re.findall(r'[A-Z]', text)
+    return ''.join(letters) if letters else text
 
 
-def evaluate(invoke=None, data_path=None, output_root=None, run_id=None):
+def score_answer(prediction, item):
+    gold = str(item['answer']).strip().upper()
+    if MULTI_CHOICE:
+        prediction, gold = ''.join(sorted(set(prediction))), ''.join(sorted(set(gold)))
+    return {'accuracy': float(prediction == gold)}
+
+
+def evaluate(invoke=None, data_paths=None, output_root=None, run_id=None):
     if invoke is None:
         validate_api()
-    data = load_label_studio_data(data_path or DATA_PATH)
-    labels = extract_reference_labels(data)
-    for item in data:
-        if not isinstance(item.get('text'), str) or not isinstance(item.get('label'), list):
-            raise ValueError('NER 输入必须包含 text 和 label 列表')
-        if any(not isinstance(x, dict) or not isinstance(x.get('text'), str) or not isinstance(x.get('labels'), list) for x in item['label']):
-            raise ValueError('NER 参考标注不合法')
+    groups = load_groups(DATA_PATHS if data_paths is None else data_paths)
     if invoke is None:
-        chain = create_chain(labels)
-        builder = build_plain_text_json_prompt if OUTPUT_MODE == 'plain_text_json' else build_prompt
-        invoke = lambda item: chain.invoke({'input': builder(item['text'], labels)})
-    def score(answer, item):
-        return score_mentions(extract_gold_mentions(item), [x.text for x in answer.entities], MATCH_MODE)
-    return evaluate_items({'ner': data}, invoke, parse_answer, score, 'f1', ['precision', 'recall', 'f1'],
-                          'ner', output_root, run_id)
+        chain = create_chain()
+        invoke = lambda item: chain.invoke({'instruction': INSTRUCTION, 'question': item['question'],
+                                           'options': '\n'.join(str(x) for x in item['options'])})
+    return evaluate_items(groups, invoke, parse_answer, score_answer, 'accuracy', ['accuracy'],
+                          TASK, output_root, run_id)
 
 
 def main():

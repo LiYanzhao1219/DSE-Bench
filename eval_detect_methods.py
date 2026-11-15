@@ -23,7 +23,7 @@ EXTRA_BODY = {}
 STREAMING = False
 MAX_TOKENS = None
 RUN_ID = 'run01'
-DATA_PATH = ROOT / 'data/task/detect_methods.json'
+DATA_PATH = ROOT / 'data/task/exploration_method_recommendation.json'
 
 class InvalidResponse(ValueError):
     pass

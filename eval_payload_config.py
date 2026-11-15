@@ -26,8 +26,7 @@ STREAMING = False
 MAX_TOKENS = None
 RUN_ID = 'run01'
 RESUME = True
-DATA_PATH = ROOT / 'data/nlp/term_translation.json'
-BATCH_SIZE = 50
+DATA_PATH = ROOT / 'data/task/scientific_payload_configuration.json'
 OUTPUT_MODE = 'structured'
 
 class InvalidResponse(ValueError):
@@ -271,6 +270,28 @@ def request_saved(ctx, request_id, invoke):
             return True, raw
 
 
+def process(ctx, item, invoke, parse):
+    if done(ctx, item):
+        return ctx['records'][item['sample_id']]
+    request_id = item['sample_id']
+    try:
+        received, raw = request_saved(ctx, request_id, invoke)
+        if not received:
+            save_record(ctx, item, 'api_error', request_id=request_id)
+        else:
+            try:
+                parsed = parse(raw)
+            except InvalidResponse as exc:
+                save_record(ctx, item, 'invalid_response', request_id=request_id, error=error_info(exc))
+            else:
+                save_record(ctx, item, 'ok', parsed=parsed, request_id=request_id)
+    except Exception as exc:
+        save_record(ctx, item, 'config_error' if isinstance(exc, ConfigurationError) else 'execution_error',
+                    request_id=request_id, error=error_info(exc))
+        raise
+    return ctx['records'][item['sample_id']]
+
+
 def generation_summary(ctx):
     counts = Counter(ctx['records'].get(x['sample_id'], {}).get('status', 'unprocessed') for x in ctx['samples'])
     summary = {'protocol_version': 2, 'task': ctx['task'], 'model': ctx['model'],
@@ -302,17 +323,14 @@ def parsed_value(call):
         return serializable(call())
     except (ValueError, TypeError) as exc:
         raise InvalidResponse('本地格式校验失败') from exc
-class TranslationItem(BaseModel):
-    id: int = Field(description="术语 id。")
-    translation: str = Field(description="中文术语对应的英文翻译。")
-
-class BatchTranslationResult(BaseModel):
-    translations: List[TranslationItem] = Field(
+REQUIRED_FIELDS = ["id", "任务", "时间", "探测对象", "科学目标", "探测方式", "载荷"]
+class PayloadConfigResult(BaseModel):
+    payloads: List[str] = Field(
         default_factory=list,
-        description="批量术语翻译结果。",
+        description="为该深空探测任务配置的载荷名称列表，只包含载荷名称。",
     )
 
-def load_terms(data_path: Union[str, Path]) -> List[Dict[str, Any]]:
+def load_payload_dataset(data_path: Union[str, Path]) -> List[Dict[str, Any]]:
     data_path = Path(data_path)
     with data_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
@@ -326,172 +344,188 @@ def load_terms(data_path: Union[str, Path]) -> List[Dict[str, Any]]:
         missing_fields = [field for field in REQUIRED_FIELDS if field not in item]
         if missing_fields:
             raise ValueError(f"Item {index} is missing fields: {missing_fields}")
-        if not isinstance(item["en"], list) or not item["en"]:
-            raise ValueError(f"Item {index} field 'en' should be a non-empty list.")
+        if not isinstance(item["载荷"], list):
+            raise ValueError(f"Item {index} field '载荷' should be a list.")
 
     return data
 
-def chunk_list(items: Sequence[Any], batch_size: int) -> List[List[Any]]:
-    if batch_size <= 0:
-        raise ValueError("batch_size should be a positive integer.")
-    return [list(items[index : index + batch_size]) for index in range(0, len(items), batch_size)]
-
-def normalize_translation(text: Any) -> str:
+def normalize_payload_name(text: Any) -> str:
     normalized = str(text).strip()
     normalized = re.sub(r"[\u00a0\u3000]+", " ", normalized)
     normalized = re.sub(r"\s+", " ", normalized)
-    normalized = normalized.strip(" \t\r\n,，;；")
-    return normalized
+    normalized = normalized.strip(" \t\r\n-•·,，;；、")
+    normalized = re.sub(r"^\d+[\.\)、)]\s*", "", normalized)
+    return normalized.strip()
 
-def join_reference_translations(translations: Sequence[Any]) -> str:
+def join_payloads(payloads: Sequence[Any]) -> str:
     return "\n".join(
-        item for item in (normalize_translation(text) for text in translations) if item
+        payload for payload in (normalize_payload_name(item) for item in payloads) if payload
     )
 
-def build_items_json(batch: Sequence[Dict[str, Any]]) -> str:
-    payload = [{"id": int(item["id"]), "zh": str(item["zh"])} for item in batch]
-    return json.dumps(payload, ensure_ascii=False, indent=2)
+def build_user_prompt(item: Dict[str, Any]) -> str:
+    return (
+        f"这是一项任务时间设定为{item['时间']}的深空探测任务，"
+        f"探测对象是{item['探测对象']}。"
+        f"任务的科学目标是{item['科学目标']}，"
+        f"其探测方式是{item['探测方式']}，"
+        f"请帮我进行该探测任务的载荷配置。"
+    )
 
-def build_batch_prompt(batch: Sequence[Dict[str, Any]], retry: bool = False) -> str:
+def build_plain_text_prompt(item: Dict[str, Any], retry: bool = False) -> str:
     retry_instruction = ""
     if retry:
-        retry_instruction = (
-            "上一次输出无法解析或缺少部分 id。请重新输出，必须覆盖本批次全部 id。\n\n"
-        )
+        retry_instruction = "上一次输出不符合要求。请重新输出，每行只写一个载荷名称。\n\n"
 
-    return f"""{retry_instruction}请翻译下面这些中文术语，并严格返回 JSON 数组。
+    return f"""{retry_instruction}{build_user_prompt(item)}
 
-术语列表：
-{build_items_json(batch)}
-
-输出格式示例：
-[
-  {{"id": 1, "translation": "11-year solar cycle"}},
-  {{"id": 2, "translation": "160-minute oscillation"}}
-]
-
-硬性要求：
-1. 只输出 JSON 数组，不要输出 Markdown、解释、注释或推理过程。
-2. 数组中每个对象只能包含 id 和 translation 两个字段。
-3. 每个输入 id 必须且只能返回一条 translation。
-4. 一条中文术语只给一个你认为最合适的英文翻译。
+输出要求：
+1. 每行只输出一个载荷名称。
+2. 不要输出 JSON、Markdown、编号、解释、用途说明或推理过程。
+3. 不要输出“以下是”“建议载荷”等引导语。
 """
 
-def build_structured_prompt(batch: Sequence[Dict[str, Any]], retry: bool = False) -> str:
-    retry_instruction = ""
-    if retry:
-        retry_instruction = (
-            "上一次输出无法解析或缺少部分 id。请重新输出，必须覆盖本批次全部 id。\n\n"
-        )
+def extract_first_json_object(text: str) -> Dict[str, Any]:
+    stripped = text.strip()
+    try:
+        parsed = json.loads(stripped)
+        if isinstance(parsed, dict):
+            return parsed
+        raise ValueError(f"JSON root should be an object, got {type(parsed).__name__}.")
+    except json.JSONDecodeError:
+        pass
 
-    return f"""{retry_instruction}请翻译下面这些中文术语。
+    start = stripped.find("{")
+    if start < 0:
+        raise ValueError(f"No JSON object found in model output: {stripped[:200]!r}")
 
-术语列表：
-{build_items_json(batch)}
+    depth = 0
+    in_string = False
+    escape = False
+    for pos in range(start, len(stripped)):
+        char = stripped[pos]
+        if in_string:
+            if escape:
+                escape = False
+            elif char == "\\":
+                escape = True
+            elif char == '"':
+                in_string = False
+            continue
 
-硬性要求：
-1. 输出结构必须只包含 translations 字段。
-2. translations 数组中每个对象只能包含 id 和 translation 两个字段。
-3. 每个输入 id 必须且只能返回一条 translation。
-4. 一条中文术语只给一个你认为最合适的英文翻译。
-5. 不要输出解释、注释或推理过程。
-"""
+        if char == '"':
+            in_string = True
+        elif char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                candidate = stripped[start : pos + 1]
+                parsed = json.loads(candidate)
+                if not isinstance(parsed, dict):
+                    raise ValueError(f"JSON root should be an object, got {type(parsed).__name__}.")
+                return parsed
 
-def extract_translation_items_from_dict(payload: Dict[str, Any]) -> List[Any]:
-    for key in ("translations", "items", "results", "data"):
-        value = payload.get(key)
-        if isinstance(value, list):
-            return value
-    if "id" in payload and "translation" in payload:
-        return [payload]
-    raise ValueError("JSON object does not contain a translations list.")
-REQUIRED_FIELDS = ["id", "zh", "en"]
-def create_translation_chain_bundle(api_url: str, api_key: str, api_model_name: str) -> Dict[str, Any]:
+    raise ValueError(f"No complete JSON object found in model output: {stripped[:200]!r}")
+
+def coerce_payload_result(raw_result: Any) -> PayloadConfigResult:
+    if isinstance(raw_result, PayloadConfigResult):
+        return raw_result
+
+    if isinstance(raw_result, dict):
+        payloads = raw_result.get("payloads")
+        if payloads is None:
+            payloads = raw_result.get("载荷")
+        if isinstance(payloads, str):
+            payloads = parse_plain_text_payloads(payloads)
+        if not isinstance(payloads, list):
+            raise ValueError("Result does not contain a payloads list.")
+
+        data = {"payloads": [normalize_payload_name(item) for item in payloads]}
+        data["payloads"] = [item for item in data["payloads"] if item]
+        if hasattr(PayloadConfigResult, "model_validate"):
+            return PayloadConfigResult.model_validate(data)
+        return PayloadConfigResult.parse_obj(data)
+
+    if isinstance(raw_result, str):
+        try:
+            return coerce_payload_result(extract_first_json_object(raw_result))
+        except Exception:
+            return PayloadConfigResult(payloads=parse_plain_text_payloads(raw_result))
+
+    raise TypeError(f"Unsupported LLM result type: {type(raw_result)!r}")
+
+def parse_plain_text_payloads(text: str) -> List[str]:
+    cleaned_text = text.strip()
+    cleaned_text = re.sub(r"^```(?:json|text)?", "", cleaned_text, flags=re.IGNORECASE).strip()
+    cleaned_text = re.sub(r"```$", "", cleaned_text).strip()
+
+    payloads: List[str] = []
+    for raw_line in re.split(r"[\r\n]+", cleaned_text):
+        line = normalize_payload_name(raw_line)
+        if not line:
+            continue
+        if line in {"载荷", "载荷名称", "推荐载荷", "配置载荷"}:
+            continue
+        if "：" in line or ":" in line:
+            prefix, suffix = re.split(r"[:：]", line, maxsplit=1)
+            if prefix.strip() in {"载荷", "载荷名称", "推荐载荷", "配置载荷"}:
+                line = normalize_payload_name(suffix)
+        if line:
+            payloads.append(line)
+
+    return payloads
+def create_payload_chain_bundle(api_url: str, api_key: str, api_model_name: str) -> Dict[str, Any]:
     try:
         from langchain_core.output_parsers import JsonOutputParser
         from langchain_core.prompts import ChatPromptTemplate
     except ImportError as exc:
-        raise RuntimeError('Missing LangChain dependencies. Install langchain-core and langchain-openai in the current PyCharm interpreter before running term translation evaluation.') from exc
+        raise RuntimeError('Missing LangChain dependencies. Install langchain-core and langchain-openai in the current PyCharm interpreter before running payload configuration evaluation.') from exc
     llm = create_llm()
-    system_prompt = '你是一个专业的航天领域和天文学领域中译英术语翻译助手。任务是把给定中文术语翻译成英文。若术语中包含方括号 []，方括号内容是消歧备注，用于理解术语语义，不应机械翻译为术语主体。请保留专有名词、缩写、字母、数字、连字符等术语特征。不要输出解释、注释、Markdown、推理过程或额外文本。'
-    plain_prompt = ChatPromptTemplate.from_messages([('system', system_prompt), ('human', '{input}')])
-    plain_chain = plain_prompt | llm
-    if OUTPUT_MODE == 'plain_json_array':
-        return {'primary': plain_chain, 'mode': 'plain_json_array'}
-    parser = JsonOutputParser(pydantic_object=BatchTranslationResult)
+    system_prompt = '你是一个深空探测领域的任务论证专家。下面我将给你提供探测对象（深空天体）、科学目标以及探测任务的大致进行时间（可能是过去的时间），请你根据这些信息配置探测器应该搭载的载荷。输出结果只能包含载荷名称，不要输出解释、编号、推理过程、用途说明或其他信息。'
+    if OUTPUT_MODE == 'plain_text':
+        plain_prompt = ChatPromptTemplate.from_messages([('system', system_prompt), ('human', '{input}')])
+        return {'primary': plain_prompt | llm, 'mode': 'plain_text'}
+    parser = JsonOutputParser(pydantic_object=PayloadConfigResult)
     json_prompt = ChatPromptTemplate.from_messages([('system', system_prompt + ' 必须只输出合法 JSON 对象。'), ('human', '{input}\n\n输出格式说明：\n{format_instructions}')]).partial(format_instructions=parser.get_format_instructions())
     json_chain = json_prompt | llm.bind(response_format={'type': 'json_object'})
+    plain_prompt = ChatPromptTemplate.from_messages([('system', system_prompt), ('human', '{input}')])
+    plain_chain = plain_prompt | llm
     if OUTPUT_MODE == 'json':
         return {'primary': json_chain, 'mode': 'json_parser'}
     try:
-        structured_chain = ChatPromptTemplate.from_messages([('system', system_prompt + ' 必须按指定结构输出。'), ('human', '{input}')]) | llm.with_structured_output(BatchTranslationResult, include_raw=True)
+        structured_chain = ChatPromptTemplate.from_messages([('system', system_prompt + ' 必须按指定结构输出。'), ('human', '{input}')]) | llm.with_structured_output(PayloadConfigResult, include_raw=True)
         return {'primary': structured_chain, 'mode': 'with_structured_output'}
     except Exception:
         return {'primary': json_chain, 'mode': 'json_parser'}
-def translation_map(raw, expected_ids):
-    payload = json_answer(raw)
-    if isinstance(payload, dict):
-        payload = parsed_value(lambda: extract_translation_items_from_dict(payload))
-    if not isinstance(payload, list):
-        raise InvalidResponse('Expected translation list')
-    candidates = {int(i): [] for i in expected_ids}
-    for entry in payload:
-        if not isinstance(entry, dict):
-            continue
-        try:
-            item_id = int(entry['id'])
-        except (KeyError, ValueError, TypeError, OverflowError):
-            continue
-        if item_id in candidates:
-            value = entry.get('translation', entry.get('en', entry.get('英文')))
-            try:
-                value = answer_text(value)
-            except InvalidResponse:
-                value = ''
-            candidates[item_id].append(normalize_translation(value))
-    return {i: values[0] if len(values) == 1 and values[0] else None for i, values in candidates.items()}
 
 def evaluate(invoke=None, data_path=None, output_root=None, run_id=None, resume=None):
     if invoke is None:
         validate_api()
     path = Path(data_path or DATA_PATH)
-    data = load_terms(path)
-    if len({int(x['id']) for x in data}) != len(data):
-        raise ValueError('翻译题目 ID 必须唯一')
+    data = load_payload_dataset(path)
     items = [sample(path, i, x['id'], input=x) for i, x in enumerate(data, 1)]
-    ctx = open_run('term_translation', items, {'batch_size': BATCH_SIZE, 'output_mode': OUTPUT_MODE}, output_root, run_id, resume)
+    ctx = open_run('payload_config', items, {'output_mode': OUTPUT_MODE}, output_root, run_id, resume)
+    mode = OUTPUT_MODE
     if invoke is None:
-        bundle = create_translation_chain_bundle(API_URL, API_KEY, MODEL_NAME)
-        builder = build_batch_prompt if bundle['mode'] == 'plain_json_array' else build_structured_prompt
-        invoke = lambda batch: bundle['primary'].invoke({'input': builder([x['input'] for x in batch])})
+        bundle = create_payload_chain_bundle(API_URL, API_KEY, MODEL_NAME)
+        mode = bundle['mode']
+        invoke = lambda item: bundle['primary'].invoke({'input': build_plain_text_prompt(item['input'])
+                   if mode == 'plain_text' else build_user_prompt(item['input'])})
+    def parse(raw):
+        value = response_payload(raw) if mode == 'plain_text' else json_answer(raw)
+        if isinstance(value, str):
+            value = answer_text(value)
+        result = parsed_value(lambda: coerce_payload_result(value))
+        if not result['payloads']:
+            raise InvalidResponse('载荷回答为空')
+        return result
     try:
-        for batch in chunk_list(items, BATCH_SIZE):
-            pending = [x for x in batch if not done(ctx, x)]
-            if not pending:
-                continue
-            request_id = f'batch:{batch[0]["row"]}-{batch[-1]["row"]}'
-            try:
-                received, raw = request_saved(ctx, request_id, lambda: invoke(batch))
-                if received:
-                    try:
-                        answers = translation_map(raw, [x['original_id'] for x in batch])
-                    except InvalidResponse:
-                        answers = {}
-                    for item in pending:
-                        answer = answers.get(int(item['original_id']))
-                        save_record(ctx, item, 'ok' if answer is not None else 'invalid_response',
-                                    parsed=answer, request_id=request_id)
-                else:
-                    for item in pending:
-                        save_record(ctx, item, 'api_error', request_id=request_id)
-            except Exception as exc:
-                for item in pending:
-                    save_record(ctx, item, 'config_error' if isinstance(exc, ConfigurationError) else 'execution_error',
-                                error=error_info(exc), request_id=request_id)
-                raise
+        for item in items:
+            process(ctx, item, lambda: invoke(item), parse)
     finally:
-        export_answers(ctx, ['序号', '中文', '正确英文翻译'],
-            [[x['original_id'], x['input']['zh'], join_reference_translations(x['input']['en'])] for x in items], lambda p: p)
+        export_answers(ctx, ['序号', '任务', '科学目标', '真实载荷'],
+            [[x['input']['id'], x['input']['任务'], x['input']['科学目标'], join_payloads(x['input']['载荷'])] for x in items],
+            lambda p: join_payloads(p['payloads']))
         result = generation_summary(ctx)
         print_summary(result)
     return result

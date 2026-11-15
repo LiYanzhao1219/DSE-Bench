@@ -26,10 +26,10 @@ TASK = 'fact'
 MULTI_CHOICE = False
 INSTRUCTION = '请阅读下面的单项选择题，直接给出正确选项字母。'
 DATA_PATHS = [
-    ROOT / 'data/knowledge/fact/evl_rockets.json',
-    ROOT / 'data/knowledge/fact/evl_bodies.json',
-    ROOT / 'data/knowledge/fact/evl_missions.json',
-    ROOT / 'data/knowledge/fact/evl_payloads.json',
+    ROOT / 'data/knowledge/factual_knowledge/launch_vehicles.json',
+    ROOT / 'data/knowledge/factual_knowledge/celestial_bodies.json',
+    ROOT / 'data/knowledge/factual_knowledge/exploration_missions.json',
+    ROOT / 'data/knowledge/factual_knowledge/scientific_payloads.json',
 ]
 
 class InvalidResponse(ValueError):

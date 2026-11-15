@@ -26,12 +26,19 @@ RESUME = True
 TASK = 'concept'
 IS_ABBREVIATION = False
 DATA_FILES = [
-    (ROOT / 'data/knowledge/concept/astro.xlsx', True),
-    (ROOT / 'data/knowledge/concept/orbit.xlsx', True),
-    (ROOT / 'data/knowledge/concept/posture.xlsx', False),
-    (ROOT / 'data/knowledge/concept/spacecraft.xlsx', True),
-    (ROOT / 'data/knowledge/concept/survey.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/astronomy_terms.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/orbital_dynamics_terms.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/attitude_dynamics_and_control_terms.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/spacecraft_engineering_terms.xlsx', True),
+    (ROOT / 'data/knowledge/conceptual_knowledge/tracking_telemetry_and_command_terms.xlsx', True),
 ]
+CONCEPT_DOMAINS = {
+    'astronomy_terms': 'astro',
+    'orbital_dynamics_terms': 'orbit',
+    'attitude_dynamics_and_control_terms': 'posture',
+    'spacecraft_engineering_terms': 'spacecraft',
+    'tracking_telemetry_and_command_terms': 'survey',
+}
 SYSTEM_PROMPT = '你是一个航天领域专家。请直接解释用户输入的术语，回答只能包含术语解释本身，不要包含寒暄、前缀、推理过程或多余标点；在保证正确完整的前提下尽量简洁。'
 USER_PROMPT = '请解释名词：{noun}'
 
@@ -332,7 +339,7 @@ def load_samples(paths=None):
                     field, noun, reference = map(lambda x: str(x).strip(), values)
                 else:
                     noun, reference = map(lambda x: str(x).strip(), values)
-                    field = path.stem
+                    field = CONCEPT_DOMAINS.get(path.stem, path.stem)
                 samples.append(sample(path, row_number, input=noun, reference=reference, field=field))
         finally:
             book.close()
