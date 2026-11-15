@@ -213,7 +213,7 @@ If you use DSE-Bench or its evaluation code in research, please cite the accompa
 
 Yanzhao Li, Haolin Zhang, Wenlong Niu, Xiaoyi Du, Guangyu Wang, and Xiaodong Peng. Evaluating large language models for deep-space exploration: a task-requirement-driven Chinese-language benchmark.
 
-The framework's 28 representative engineering activities and their supporting sources are documented in the [task source-verification table](28%20Typical%20Tasks%20Source%20Verification.md).
+The framework's 28 representative engineering activities and their supporting sources are documented in the [task source-verification table](28%20Typical%20Tasks%20Source.md).
 
 ## Feedback and Contributions
 
